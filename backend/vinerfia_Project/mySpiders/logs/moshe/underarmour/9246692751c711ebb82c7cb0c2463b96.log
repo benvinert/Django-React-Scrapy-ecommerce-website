@@ -1,0 +1,713 @@
+2021-01-08 17:38:42 [scrapy.utils.log] INFO: Scrapy 2.4.1 started (bot: moshe)
+2021-01-08 17:38:42 [scrapy.utils.log] INFO: Versions: lxml 4.6.1.0, libxml2 2.9.5, cssselect 1.1.0, parsel 1.6.0, w3lib 1.22.0, Twisted 20.3.0, Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:43:08) [MSC v.1926 32 bit (Intel)], pyOpenSSL 19.1.0 (OpenSSL 1.1.1h  22 Sep 2020), cryptography 3.2.1, Platform Windows-10-10.0.19041-SP0
+2021-01-08 17:38:42 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2021-01-08 17:38:42 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'moshe',
+ 'CONCURRENT_REQUESTS': 32,
+ 'COOKIES_ENABLED': False,
+ 'DOWNLOAD_DELAY': 0.3,
+ 'LOG_FILE': 'logs\\moshe\\underarmour\\9246692751c711ebb82c7cb0c2463b96.log',
+ 'NEWSPIDER_MODULE': 'moshe.spiders',
+ 'SPIDER_MODULES': ['moshe.spiders']}
+2021-01-08 17:38:42 [scrapy.extensions.telnet] INFO: Telnet Password: e253c3c1d0e33cf1
+2021-01-08 17:38:42 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Android
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV13, Brand: Sony, Model: BDV13
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV14, Brand: Sony, Model: BDV14
+2021-01-08 17:38:43 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LG Web0S SmartTV, Brand: LG, Model: Web0S SmartTV
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Sony BDV11, Brand: Sony, Model: BDV11
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Nintendo DSi, Brand: Nintendo, Model: DSi
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF LF-2403N, Brand: LYF, Model: LF-2403N
+2021-01-08 17:38:44 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: LYF F90M, Brand: LYF, Model: F90M
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Applebot
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Other
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: SMTBot
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2021-01-08 17:38:45 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: WebKit Nightly
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: PhantomJS
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Robot
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedDeviceType] Family: Other, Brand: None, Model: None
+2021-01-08 17:38:46 [scrapy_user_agents.user_agent_picker] WARNING: [UnsupportedBrowserType] Family: Zune
+2021-01-08 17:38:46 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy_user_agents.middlewares.RandomUserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2021-01-08 17:38:46 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2021-01-08 17:38:46 [scrapy.middleware] INFO: Enabled item pipelines:
+['moshe.pipelines.MoshePipeline']
+2021-01-08 17:38:46 [scrapy.core.engine] INFO: Spider opened
+2021-01-08 17:38:46 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2021-01-08 17:38:46 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2021-01-08 17:38:46 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+2021-01-08 17:38:46 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36
+2021-01-08 17:38:46 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+2021-01-08 17:38:46 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+2021-01-08 17:38:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms> (referer: None)
+2021-01-08 17:38:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men> (referer: None)
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.96 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.63 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.89 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/27.0.1453.94 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.139 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/38.0.2125.111 Safari/537.36
+2021-01-08 17:38:47 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.109 Safari/537.36
+2021-01-08 17:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men> (referer: None)
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.84 Safari/537.36
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+2021-01-08 17:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops> (referer: None)
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.93 Safari/537.36
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.106 Safari/537.36
+2021-01-08 17:38:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-ua-baseline-fleece-hoodie/1356765.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:48 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.85 Safari/537.36
+2021-01-08 17:38:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-ua-baseline-fleece-hoodie/1356765.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Graphite Blue / Electric Blue / Electric Blue - 581',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1356765-581_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356765-581_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356765-581_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356765-581_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356765-581_HOOD?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's UA Baseline Fleece Hoodie",
+ 'price': 60.0,
+ 'sizes': ['LG', 'XL', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-curry-stealth-jacket/1356996.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:49 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.82 Safari/537.36
+2021-01-08 17:38:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-curry-stealth-jacket/1356996.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Black / Black / Black - 001',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1356996-001_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356996-001_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356996-001_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356996-001_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356996-001_HOOD?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's Curry Stealth Jacket",
+ 'price': 110.0,
+ 'sizes': ['SM', 'XXL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/ua-heatgear-basketball-tank/1355672.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:50 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+2021-01-08 17:38:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/bottoms/mens-curry-elevated-performance-shorts/1356992.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:50 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36
+2021-01-08 17:38:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/ua-heatgear-basketball-tank/1355672.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Black / Black / White - 001',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1355672-001_FC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1355672-001_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1355672-001_SC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1355672-001_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1355672-001_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': 'UA HEATGEAR BASKETBALL TANK',
+ 'price': 25.0,
+ 'sizes': ['SM', 'MD', 'LG', 'XL', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/bottoms/mens-curry-elevated-performance-shorts/1356992.html?start=12&breadCrumbLast=Men>
+{'Category': 'Bottoms',
+ 'brand': 'UnderArmour',
+ 'color': 'Royal / Royal / White - 400',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1356992-400_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356992-400_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356992-400_SIDEDET?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356992-400_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356992-400_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's Curry Elevated Performance Shorts",
+ 'price': 50.0,
+ 'sizes': ['MD', 'LG', 'XL', 'XXL', '3XL', '4XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-curry-undrtd-warmup-jacket/1356994.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:51 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.80 Safari/537.36
+2021-01-08 17:38:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-curry-undrtd-warmup-jacket/1356994.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Black / Black / Black - 001',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1356994-001_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356994-001_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356994-001_SIDEDET?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356994-001_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356994-001_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's Curry UNDRTD Warmup Jacket",
+ 'price': 90.0,
+ 'sizes': ['SM', 'MD', 'LG', 'XL', 'XXL', '3XL', '4XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-ua-baseline-full-zip-hoodie/1356873.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:51 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36
+2021-01-08 17:38:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/bottoms/girls-coldgear-printed-leggings/1318135.html?start=12&breadCrumbLast=Bottoms> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:38:51 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36
+2021-01-08 17:38:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-ua-baseline-full-zip-hoodie/1356873.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Black / Beta / Beta - 002',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1356873-002_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356873-002_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356873-002_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356873-002_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356873-002_HOOD?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's UA Baseline Full Zip Hoodie",
+ 'price': 65.0,
+ 'sizes': ['SM', 'MD', 'LG', 'XL', 'XXL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/bottoms/girls-coldgear-printed-leggings/1318135.html?start=12&breadCrumbLast=Bottoms>
+{'Category': 'Bottoms',
+ 'brand': 'UnderArmour',
+ 'color': 'Comet Green / White - 361',
+ 'gender': 'Kids',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/PS1318135-361_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'kids_gender': 'girls',
+ 'name': "Girls' ColdGear® Printed Leggings",
+ 'price': 41.99,
+ 'sizes': ['YXS', 'YSM', 'YMD', 'YXL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/bottoms/mens-ua-baseline-fleece-shorts/1351286.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:52 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.94 Safari/537.36
+2021-01-08 17:38:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/bottoms/mens-ua-baseline-fleece-shorts/1351286.html?start=12&breadCrumbLast=Men>
+{'Category': 'Bottoms',
+ 'brand': 'UnderArmour',
+ 'color': 'Halo Gray Light Heather / Halo Gray Light Heather / Black - 014',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1351286-014_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1351286-014_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1351286-014_SC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1351286-014_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1351286-014_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's UA Baseline Fleece Shorts",
+ 'price': 45.0,
+ 'sizes': ['R', 'SM', 'MD', 'LG', 'XL', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-curry-undrtd-wordmark-t-shirt/1356998.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:52 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2454.101 Safari/537.36
+2021-01-08 17:38:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-curry-undrtd-wordmark-t-shirt/1356998.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'White / Black / Black - 100',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1356998-100_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356998-100_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1356998-100_SC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356998-100_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1356998-100_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's Curry UNDRTD Wordmark T-Shirt",
+ 'price': 35.0,
+ 'sizes': ['SM', 'LG', 'XL', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-curry-performance-tank/1357228.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:52 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36
+2021-01-08 17:38:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/bottoms/mens-ua-baseline-fleece-joggers/1343008.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:52 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.111 Safari/537.36
+2021-01-08 17:38:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-curry-performance-tank/1357228.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Black / Black / Black - 001',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1357228-001_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1357228-001_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1357228-001_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1357228-001_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1357228-001_COLLAR?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's Curry Performance Tank",
+ 'price': 35.0,
+ 'sizes': ['XL', 'XXL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/bottoms/mens-ua-baseline-fleece-joggers/1343008.html?start=12&breadCrumbLast=Men>
+{'Category': 'Bottoms',
+ 'brand': 'UnderArmour',
+ 'color': 'Cordova / Cordova / Halo Gray - 615',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1343008-615_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1343008-615_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1343008-615_SC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1343008-615_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1343008-615_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's UA Baseline Fleece Joggers",
+ 'price': 65.0,
+ 'sizes': ['R', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-curry-photoreal-t-shirt/1357919.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:53 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+2021-01-08 17:38:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/tops/mens-ua-baseline-fleece-hoodie/1343007.html?start=12&breadCrumbLast=Men> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-basketball-men&prefn1=division&prefv1=Clothing&prefn2=experienceType&prefv2=premium&prefn3=isMFOItem&prefv3=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:38:53 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+2021-01-08 17:38:53 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzM4MTYmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-pre-school-ua-favorite-wordmark-capris/5033816.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:53 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+2021-01-08 17:38:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-curry-photoreal-t-shirt/1357919.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'White / White - 100',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1357919-100_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1357919-100_FC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1357919-100_SC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1357919-100_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1357919-100_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's Curry Photoreal T-Shirt",
+ 'price': 35.0,
+ 'sizes': ['LG', 'XL', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/tops/mens-ua-baseline-fleece-hoodie/1343007.html?start=12&breadCrumbLast=Men>
+{'Category': 'Tops',
+ 'brand': 'UnderArmour',
+ 'color': 'Onyx White / Onyx White / Zeppelin Yellow - 112',
+ 'gender': 'Men',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/V5-1343007-112_FSF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1343007-112_BC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/V5-1343007-112_SC?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1343007-112_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS1343007-112_HB?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'name': "Men's UA Baseline Fleece Hoodie",
+ 'price': 60.0,
+ 'sizes': ['R', 'SM', 'MD', 'LG', 'XL', 'XXL', '3XL'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/bottoms/girls-pre-school-ua-tie-dye-fc-capri/5035971.html?start=12&breadCrumbLast=Bottoms> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:38:54 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36
+2021-01-08 17:38:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/bottoms/girls-pre-school-ua-tie-dye-fc-capri/5035971.html?start=12&breadCrumbLast=Bottoms>
+{'Category': 'Bottoms',
+ 'brand': 'UnderArmour',
+ 'color': 'Cerise / Equator Blue / Black - 653',
+ 'gender': 'Kids',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/PS5035971-653_HF?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS5035971-653_S?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708',
+            'https://underarmour.scene7.com/is/image/Underarmour/PS5035971-653_S1?rp=standard-0pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=566,708'],
+ 'kids_gender': 'girls',
+ 'name': "Girls' Pre-School UA Tie-Dye FC Capri",
+ 'price': 27.0,
+ 'sizes': ['4', '6X'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com//en-us/p/bottoms/girls-pre-school-ua-play-up-shorts/5033783.html?start=12&breadCrumbLast=Bottoms> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:38:54 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+2021-01-08 17:38:54 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY5MTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-ua-softball-slider-shorts/1356910.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:54 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.101 Safari/537.36
+2021-01-08 17:38:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.underarmour.com//en-us/p/bottoms/girls-pre-school-ua-play-up-shorts/5033783.html?start=12&breadCrumbLast=Bottoms>
+{'Category': 'Bottoms',
+ 'brand': 'UnderArmour',
+ 'color': 'Black / Pink Surge - 791',
+ 'gender': 'Kids',
+ 'images': ['https://underarmour.scene7.com/is/image/Underarmour/5033783-791_B?rp=standard-10pad|pdpMainDesktop&scl=1&fmt=jpg&qlt=85&resMode=sharp2&cache=on,on&bgc=F0F0F0&wid=566&hei=708&size=546,688'],
+ 'kids_gender': 'girls',
+ 'name': "Girls' Pre-School UA Play Up Shorts",
+ 'price': 20.0,
+ 'sizes': ['4', '6', '6X'],
+ 'which_style': 'men-sport-basketball'}
+2021-01-08 17:38:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzYwMzkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-pre-school-ua-streaky-twist-capri/5036039.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:55 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+2021-01-08 17:38:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0ODgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-ua-rival-fleece-metallic-pants/1356488.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:55 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/61.0.3163.79 Safari/537.36
+2021-01-08 17:38:55 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzQzMTkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-toddler-ua-rally-shorts/5034319.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:55 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36
+2021-01-08 17:38:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY5MDcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-ua-softball-pants/1356907.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:56 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.112 Safari/537.36
+2021-01-08 17:38:56 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0NjEmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-coldgear-leggings/1356461.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:56 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.87 Safari/537.36
+2021-01-08 17:38:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0OTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/bottoms/girls-ua-winter-weight-fleece-pants/1356490.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:57 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.22 (KHTML, like Gecko) Chrome/25.0.1364.172 Safari/537.22
+2021-01-08 17:38:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0NjAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/ua-heatgear/girls-heatgear-armour-crop/1356460.html?start=12&breadCrumbLast=Bottoms>
+2021-01-08 17:38:57 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+2021-01-08 17:38:57 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjE5NTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/running/mens-ua-charged-impulse-running-shoes/3021950.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:38:57 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36
+2021-01-08 17:38:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNDE5Mzcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/bottoms/mens-ua-qualifier-speedpocket-pants/1341937.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:38:58 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.186 Safari/537.36
+2021-01-08 17:38:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMxMzImc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/running/mens-ua-hovr-phantom-rn-ops-running-shoes/3023132.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:38:58 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.80 Safari/537.36
+2021-01-08 17:38:58 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTQzOTcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-intelliknit-phantom-2.0-crew/1354397.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:38:58 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+2021-01-08 17:38:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMzODkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/shoes/mens-ua-hovr-infinite-2-storm-running-shoes/3023389.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:38:59 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36
+2021-01-08 17:38:59 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjI1OTMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/running/mens-ua-charged-impulse-knit-running-shoes/3022593.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:38:59 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.65 Safari/537.36
+2021-01-08 17:39:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMyOTgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/running/mens-ua-hovr-phantom-rn-upstream-camo-running-shoes/3023298.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:39:00 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.87 Safari/537.36
+2021-01-08 17:39:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTYxNzImc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/bottoms/mens-ua-rush-run-joggers/1356172.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:39:00 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36
+2021-01-08 17:39:00 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNjA1MTMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-storm-evolution-daytona-1-2-zip/1360513.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:00 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2021-01-08 17:39:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNDMyNDMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-coldgear-base-3.0-crew/1343243.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:01 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36
+2021-01-08 17:39:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMjA4MDUmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-coldgear-armour-fitted-mock/1320805.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:01 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36
+2021-01-08 17:39:01 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMTIyNzcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-locker-tank/1312277.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:01 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36
+2021-01-08 17:39:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMDU3ODAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-locker-1-4-zip/1305780.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:02 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.86 Safari/537.36
+2021-01-08 17:39:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNjIxMDQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-project-rock-charged-cotton-brahma-hoodie/1362104.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:02 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.116 Safari/537.36
+2021-01-08 17:39:02 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEyNTc0Njgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-heatgear-armour-short-sleeve-compression-shirt/1257468.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:02 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36
+2021-01-08 17:39:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTI2Nzgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-freedom-flag-rival-hoodie/1352678.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:03 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.99 Safari/537.36
+2021-01-08 17:39:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTk5NzEmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-storm-sweaterfleece-1-2-zip/1359971.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:03 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.31 (KHTML, like Gecko) Chrome/26.0.1410.64 Safari/537.31
+2021-01-08 17:39:03 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTEzMTQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-qualifier-fleece-anorak/1351314.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:03 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36
+2021-01-08 17:39:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTMzNDkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-coldgear-base-4.0-crew/1353349.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:04 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.181 Safari/537.36
+2021-01-08 17:39:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMDU3NzYmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> from <GET https://www.underarmour.com//en-us/p/tops/mens-ua-locker-2.0-long-sleeve/1305776.html?start=12&breadCrumbLast=Tops>
+2021-01-08 17:39:04 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.81 Safari/537.36
+2021-01-08 17:39:04 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMTU1ODkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/socks/unisex-ua-run-cushion-no-show-tab-running-socks/1315589.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:39:04 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+2021-01-08 17:39:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzM4MTYmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:05 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.87 Safari/537.36
+2021-01-08 17:39:05 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzM4MTYmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjM4OTkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/shoes/mens-ua-hovr-phantom-2-metallic-running-shoes/3023899.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:39:05 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3112.90 Safari/537.36
+2021-01-08 17:39:05 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjI1OTUmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/running/mens-ua-surge-2-running-shoes/3022595.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:39:05 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36
+2021-01-08 17:39:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY5MTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:06 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY5MTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0ODgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0ODgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzYwMzkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzYwMzkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzQzMTkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:07 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTUwMzQzMTkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY5MDcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY5MDcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0NjEmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0NjEmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0OTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0OTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0NjAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+2021-01-08 17:39:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTY0NjAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9Qm90dG9tcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=girls-clothing-bottoms&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Bottoms)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjE5NTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:09 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjE5NTAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNDE5Mzcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNDE5Mzcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMxMzImc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMxMzImc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTQzOTcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:10 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTQzOTcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMzODkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMzODkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjI1OTMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:11 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjI1OTMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMyOTgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjMyOTgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTYxNzImc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTYxNzImc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNjA1MTMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:12 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNjA1MTMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNDMyNDMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNDMyNDMmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMjA4MDUmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMjA4MDUmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMTIyNzcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:13 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMTIyNzcmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNjIxMDQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNjIxMDQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMDU3ODAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:14 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMDU3ODAmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEyNTc0Njgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEyNTc0Njgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTI2Nzgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTI2Nzgmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTk5NzEmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:15 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTk5NzEmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTEzMTQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTEzMTQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTMzNDkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:16 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzNTMzNDkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMDU3NzYmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+2021-01-08 17:39:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMDU3NzYmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9VG9wcw%3d%3d> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=men-clothing-tops&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Tops)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMTU1ODkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:17 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTEzMTU1ODkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:17 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjQwMjQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> from <GET https://www.underarmour.com//en-us/p/fall-gear/mens-ua-charged-escape-3-evo-wide-4e-running-shoes/3024024.html?start=12&breadCrumbLast=Men>
+2021-01-08 17:39:17 [scrapy_user_agents.middlewares] DEBUG: Assigned User-Agent Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.71 Safari/537.36
+2021-01-08 17:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjM4OTkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjM4OTkmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjI1OTUmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjI1OTUmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjQwMjQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+2021-01-08 17:39:18 [scrapy.core.scraper] ERROR: Spider error processing <GET https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/PX-Show?url=aHR0cHM6Ly93d3cudW5kZXJhcm1vdXIuY29tL29uL2RlbWFuZHdhcmUuc3RvcmUvU2l0ZXMtVVMtU2l0ZS9lbl9VUy9Qcm9kdWN0LVNob3c%2fcGlkPTMwMjQwMjQmc3RhcnQ9MTImYnJlYWRDcnVtYkxhc3Q9TWVu> (referer: https://www.underarmour.com/on/demandware.store/Sites-US-Site/en_US/Search-UpdateGrid?cgid=sport-running-men&prefn1=experienceType&prefv1=premium&prefn2=isMFOItem&prefv2=false&start=12&sz=12&showMore=true&previous=false&pageSize=12.0&breadCrumbLast=Men)
+Traceback (most recent call last):
+  File "c:\users\benvi\appdata\local\programs\python\python38-32\lib\site-packages\twisted\internet\defer.py", line 654, in _runCallbacks
+    current.result = callback(current.result, *args, **kw)
+  File "C:\Users\benvi\Downloads\GithubScrapy\moshe\spiders\underarmour.py", line 25, in getDetails
+    gender = response.css(".b-breadcrumbs-link::text").get().strip()
+AttributeError: 'NoneType' object has no attribute 'strip'
+2021-01-08 17:39:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2021-01-08 17:39:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 59560,
+ 'downloader/request_count': 85,
+ 'downloader/request_method_count/GET': 85,
+ 'downloader/response_bytes': 2209768,
+ 'downloader/response_count': 85,
+ 'downloader/response_status_count/200': 52,
+ 'downloader/response_status_count/302': 33,
+ 'elapsed_time_seconds': 32.326172,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2021, 1, 8, 15, 39, 19, 56823),
+ 'item_scraped_count': 15,
+ 'log_count/DEBUG': 185,
+ 'log_count/ERROR': 33,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 45,
+ 'request_depth_max': 1,
+ 'response_received_count': 52,
+ 'scheduler/dequeued': 85,
+ 'scheduler/dequeued/memory': 85,
+ 'scheduler/enqueued': 85,
+ 'scheduler/enqueued/memory': 85,
+ 'spider_exceptions/AttributeError': 33,
+ 'start_time': datetime.datetime(2021, 1, 8, 15, 38, 46, 730651)}
+2021-01-08 17:39:19 [scrapy.core.engine] INFO: Spider closed (finished)
