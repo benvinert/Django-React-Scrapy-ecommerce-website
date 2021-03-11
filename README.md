@@ -2,7 +2,7 @@
 
 <h1>What is?</h1>
 <h4>
-ecommerce website at each hour scraping all data from companies(Adidas,Nike,Puma,Rebook), and switch between old database to new database on MongoDB,
+ecommerce website at each hour running many processes to scrape all data from companies(Adidas,Nike,Puma,Rebook), and switch between old database to new database on MongoDB,
 and all rest of the details on MySQL,
 it's give to customer to see&buy all items in one website instead search between all 4 websites
 </h4>
@@ -52,6 +52,7 @@ it's give to customer to see&buy all items in one website instead search between
 <h1>Features</h1>
 <ul>
   <li>JWT</li>
+  <li>each hour run many processes to scrape data</h1>
   <li>Authentication</li>
   <li>Add to cart(LocalStorage)</li>
   <li>Add to favorites(LocalStorage)</li>
@@ -67,6 +68,7 @@ it's give to customer to see&buy all items in one website instead search between
 <ul>
   <li>Python</li>
   <li>Django</li>
+  <li>Multiprocessing</li>
   <li>scrapy</li>
   <li>Djoser</li>
   <li>Pymongo</li>
