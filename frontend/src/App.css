@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+  margin : 0;
+  padding: 0;
+}
+
+.Top
+{
+  font-size: 2rem;
+}
+
+
+
+
+.buttonLike:hover{
+  font-size: 2.8rem;
+  transition: 0.3s;
+}
+
+.InfoBuyers
+{
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  padding : 10px 10px 10px 10px;
+}
+
+/* Images On InItemPage */
+.ImageCenter
+{
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+/*#####################*/
+
+
+/* Filters  */
+.GridFilters
+{
+  padding: 15px 15px 15px 15px ;
+  transition: 0.1s;
+  background-color:lightgray;
+}
+
+.FiltersGrid
+{
+
+  padding: 5px 5px 5px 5px;
+  
+}
+
+.FiltersGrid div
+{
+  margin-top: 10px;
+  border-radius: 50%;
+}
+
+
+.FilterSizes
+{
+  display : grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0px;
+}
+
+
+/* ################# */
+
+.Navbar1
+{
+  background-color:#1d1d1d;
+  height: 50px;
+}
+
+
+.carusel
+{
+  height : auto;
+  width: auto;
+}
+
+Grid.Navbar1 Button
+{
+  margin-top: 30px;
+
+}
+
+.BtnInCarusel
+{
+left : -250px;
+top : -270px;
+color : gainsboro;
+}
+
+.required
+{
+  margin-bottom: 6px;
+  color : red;
+}
+
+.RegisterAndLoginBtn
+{
+  left : 75%;
+}
+
+
+.ContainerClass
+{
+  background-color: #C7F6EC;
+  border-radius: 3%;
+  padding: 40px 40px 40px 40px;
+}
+
+.Pagination
+{
+  align : 'left';
+  margin-top: 10px;
+}
+
+.PaginationCircle
+{
+  
+  padding: 5px 5px 5px 5px;
+  margin-left: 5px;
+  transition: transform 0.10s;
+  
+  text-decoration: none;
+  border : 0.2px solid black;
+  color : black;
+}
+.PaginationCircle:hover
+{
+  
+  margin-top: -66px;
+  background-color:rgb(126, 126, 126,50%);
+}
+
+.PaginationCircle:focus
+{
+  background-color: burlywood;
+
+}
+
+@media screen and (max-width: 600px)
+{
+  .carusel
+  {
+    display: none;
+  }
+  .RegisterAndLoginBtn
+  {
+    left : 10%;
+  }
+}

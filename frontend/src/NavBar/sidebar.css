@@ -1,0 +1,20 @@
+.sidebar
+{
+  left : -100%;
+  background-color: none;
+  transition: 850ms;
+  background-color:#1d1d1d;
+  justify-content: center;
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top : 0px;
+}
+.sidebar.active
+{
+  left : 0%;
+  transition: 350ms;
+  width : 270px;
+  height : 100vh;
+}

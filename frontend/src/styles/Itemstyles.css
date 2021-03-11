@@ -1,0 +1,32 @@
+.item-title span
+{
+
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width: 600px)
+{
+    .item-title span
+{
+    font-size: 1.0rem;
+}
+}
+
+.item-title div
+{
+    font-size: 1.3rem;
+    font-family: sans-serif;
+}
+
+.imageItem:hover
+{
+    
+    opacity: 0.6;
+    transition: .6s;
+}
+
+
+
+
+
+
