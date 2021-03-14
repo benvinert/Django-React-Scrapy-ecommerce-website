@@ -48,10 +48,31 @@ PostsCollection = DATABASE['Posts']
 
 
 def sendQuery(query,listResults):
+    """
+    run on all Collections(Adidas,Nike,Rebook,Puma) and send them query
+
+    Args :
+
+    query(dict) : contain query
+
+    listResults(list) : initially empty list but would contain the result of query
+    """
     for each_company in listCompanys:
         listResults += each_company.find(query)
 
 def checkIfNeedToSort(sizes):
+    """
+    if on sizes exists least one str we don't sort sizes
+
+    Args : 
+
+    sizes(set) : contains all unique sizes of products
+
+    Returns :
+
+    Sorted/Not Sorted set
+    """
+
     #if list is int or float so we need to sort
     doSort = True
     #if one str exists in list so we dont sorted the list
@@ -64,7 +85,25 @@ def checkIfNeedToSort(sizes):
 
 
 def checkIfSizesDecimalOrChar(listResults,sizes):
+    """
+    because all sizes of product is str , so we need converte them to numbers(int,float)
+
+    so it runs on each size on product and check if he int,float,char and add him to sizes with his type
+
+    Args : 
+
+    listResults(list) : list of all products we got from database
+
+    sizes(set) : empty set(to save on unique each size)
+    """
+
     def is_number(num):
+
+        """
+        Example : "42.5" will be 425
+
+        Returns clean number without dot(".")
+        """
         return num.replace(".","").isdigit()
 
     for each_item in listResults:
@@ -84,6 +123,29 @@ def checkIfSizesDecimalOrChar(listResults,sizes):
 @permission_classes([AllowAny])
 # @cache_page(60)
 def getItemsFromProSide(request,**kwargs):
+    """
+        Analyst the kwargs dict and choose which query send to database.
+
+        *if key "category" is : "All" means get all clothing(not shoes)
+        *if key "which_style" is kids : options : toddler, little, older , if not so which_style would be style about shoes(Running,golf,basketball)
+
+
+        Examples : 
+
+        Example 1 : {gender : "kids" , kids_gender : "girls" , which_style : older ,category : "All"}
+        we will got all clothing of older girls 
+
+        Example 2 : {gender : "men" , category : "jackets"}
+        we will got mens jacket    
+
+        Example 3 : {gender : "men" , category : "shoes", which_style : "running"}
+        we will got men shoes only with style running
+
+        Returns :
+
+        Json object, key : "products" contains all products,"max" : maximum price , "min" : minimum price , "sizes" : all unique sizes of products
+
+    """
     listResults = []
     print(kwargs)
     #if its "All" so it's give me all clothing
@@ -117,9 +179,9 @@ def getItemsFromProSide(request,**kwargs):
     sizes = {}
     sizes = set(sizes)
     checkIfSizesDecimalOrChar(listResults,sizes)
-    sizes = list(sizes)#Converte from Set to List
+    sizes = list(sizes)
     checkIfNeedToSort(sizes)#If least one str exists in the list so we dont sort the list
-    sizes = [str(eachSize) for eachSize in sizes]
+    sizes = [str(eachSize) for eachSize in sizes]#converting all sizes again to str
     higherPrice = max(each['price'] for each in listResults)
     lowerPrice = min(each['price'] for each in listResults)
     print(len(listResults))
@@ -128,6 +190,21 @@ def getItemsFromProSide(request,**kwargs):
 
 
 def assembleQuery(listParams,nameOfParam,queryListParams,finalListQuerys):
+    """
+    assemble the query by all custom parameters.
+
+    Args :
+
+    listParams(list) : list it has all params of custom query of client
+
+    nameOfParam("Category" , "gender" , "color" , "brand") : key
+
+    queryListParams(list) : initially empty but would contain all querys of nameOfParam
+
+    finalListQuerys(list) : will contain the final query to send to database
+
+    Returns : None
+    """
     if(len(listParams) != 0):
         for param in listParams:
             queryListParams.append({nameOfParam: {"$regex" : ".*" + param['title'][param['title'].find(":")+1:] + ".*","$options" : 'i'} })
@@ -135,6 +212,29 @@ def assembleQuery(listParams,nameOfParam,queryListParams,finalListQuerys):
 
 @api_view(['GET'])
 def searchItem(request,**kwargs):
+    """
+    search items by a custom query of client(kwargs)
+    
+    Example1 :
+    {'params': '{"category":[{"title":"category:shoe"}],"style":[],"gender":[{"title":"gender:women"},{"title":"gender:kids"}],"color":[],"brand":[]}'}
+
+    we got shoes of womens and kids 
+
+    Example2 :
+    {'params': '{"category":[{"title":"category:shoe"},{"title":"category:hoodie"}],"style":[],"gender":[{"title":"gender:kids"}],"color":[],"brand":[{"title":"brand:rebook"}]}'}
+
+    we got shoes & hoodies of kids , and brand rebook
+
+    each param is a array that contains object with title and we seperate the key and value 
+
+    Example3 : 
+    
+    {"title":"category:shoe"} to "category" : "shoe" 
+
+    Returns : 
+
+    dict of all products that meet the requirements , minimum and maximum of price , unique sizes of all products
+    """
     #{$or : [{gender : "men"},{gender : "women"}] , $or : [{Category : "shoes"},{Category : "jackets"}]}
     jsonParams = json.loads(kwargs['params'])
     queryListCategory = []
@@ -172,6 +272,17 @@ def searchItem(request,**kwargs):
 
 @api_view(['GET'])
 def getItemById(request,product_code):
+    """
+    Get product by Id
+
+    Args : 
+
+    product_code(str) : code of product are need to find 
+
+    Returns : 
+
+    dict product
+    """
     listResults = []
     print(product_code)
     query = {"product_code" : product_code}

@@ -6,24 +6,6 @@ import json
 from django.contrib.auth import get_user_model
 
 
-
-# class UsersSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Users
-#         fields = '__all__'
-
-#     def create(self,validated_data):
-#         JSON_Validate_data = json.loads(json.dumps(validated_data))#Converte to dict
-#         print("CREATE:" ,JSON_Validate_data)
-#         Users.objects.create(username=JSON_Validate_data['username']
-#         ,email=JSON_Validate_data['email']
-#         ,password=JSON_Validate_data['password']
-#         ,birthday=JSON_Validate_data['birthday']
-#         )
-       
-        
-
-#         return "Succsess"
 class PostSerializer(serializers.Serializer):
     date = serializers.DateField()
     content =serializers.CharField()
@@ -44,7 +26,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Order
-        fields = ['products','email','address','city','name','subtotal','shipping','total','subtotal']
+        fields = ['products','email','address','city','name','subtotal','shipping','total','subtotal','quantity']
 
         
 
@@ -62,7 +44,8 @@ class OrderSerializer(serializers.ModelSerializer):
         city=JSON_Validate_data['city'],
         subtotal=JSON_Validate_data['subtotal'],
         shipping=JSON_Validate_data['shipping'],
-        total=JSON_Validate_data['total'])
+        total=JSON_Validate_data['total'],
+        quantity=JSON_Validate_data['quantity'])
         # add to the order object products
         for each_product in json_products:
             try:

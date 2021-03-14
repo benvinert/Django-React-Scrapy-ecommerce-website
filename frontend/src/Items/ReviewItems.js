@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState,useContext } from 'react'
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import Card from '@material-ui/core/Card';
@@ -10,6 +10,8 @@ import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 import EditIcon from '@material-ui/icons/Edit';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../Context/UserContext';
+
 
 const useStyles = makeStyles((theme) => ({
     card: {
@@ -25,6 +27,7 @@ const useStyles = makeStyles((theme) => ({
 
 export const ReviewItems = ({itemDetails,postContent,userPostLoading,sendPost}) =>
 {
+    const { User } = useContext(UserContext);
     const classes = useStyles();
     const [editPost,setEditPost] = useState({status : false,defaultValue : "Write your product review here"})
 
@@ -89,7 +92,7 @@ export const ReviewItems = ({itemDetails,postContent,userPostLoading,sendPost}) 
         <Grid container spacing={1}>
             <Card className={classes.card} key={index}>
                 <Grid item item xl={12} md={12} sm={12} xs={12}>
-                    <CardHeader title={eachPost.author} subheader={eachPost.date} action={editPost.status ? null : <Link onClick={() => editPostById(eachPost._id,eachPost.content)}>Edit<EditIcon/></Link>}/>
+                    <CardHeader title={eachPost.author} subheader={eachPost.date} action={editPost.status ? null : eachPost.author == User.email ? <Link onClick={() => editPostById(eachPost._id,eachPost.content)}>Edit<EditIcon/></Link> : null}/>
                 </Grid>
                 <CardContent>
                     <Typography variant="subtitle1"  color="textSecondary" component="p" gutterBottom>

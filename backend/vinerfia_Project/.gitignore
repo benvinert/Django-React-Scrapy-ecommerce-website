@@ -1,0 +1,6 @@
+# dependencies
+/.vscode
+/.dbs
+./.vscode
+/vinerfiav1/.__pycache__
+/vinerfiav1/.migrations
