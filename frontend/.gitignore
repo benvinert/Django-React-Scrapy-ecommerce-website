@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/.vscode
+/.dbs
+./.vscode
+/vinerfiav1/.__pycache__
+/vinerfiav1/.migrations
