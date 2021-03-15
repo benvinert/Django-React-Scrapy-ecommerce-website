@@ -8,14 +8,14 @@ from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from datetime import datetime
 from django.http import HttpResponse
 from pymongo import MongoClient
-
+from typing import Union
 
 client = MongoClient('localhost', 27017)
 DATABASE = client["Posts"]
 PostsCollection = DATABASE['Posts']
 
 
-def getPosts(request,product_code):
+def getPosts(request,product_code: Union[str]):
     """
     Returns :
     

@@ -8,7 +8,7 @@ from django.forms.models import model_to_dict
 from rest_framework.permissions import AllowAny,IsAuthenticated,IsAdminUser
 from djoser.compat import get_user_email
 from djoser.conf import settings
-
+from typing import Union
 
 
 def sendEmailOrder(request):
@@ -61,7 +61,7 @@ def addToHistoryOrders(request):
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def getAllOrdersByEmail(request,user_email):
+def getAllOrdersByEmail(request,user_email: Union[str]):
 
     """
     	search user on database by user_email and Get all orders of user
@@ -83,7 +83,7 @@ def getAllOrdersByEmail(request,user_email):
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
-def getOneOrderByOrderNumber(request,orderNumber):
+def getOneOrderByOrderNumber(request,orderNumber: Union[str]):
     """
     Get order by orderNumber
 

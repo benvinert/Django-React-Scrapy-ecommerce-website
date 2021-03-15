@@ -18,10 +18,7 @@ from mySpiders.moshe.spiders import nikescrapy,adidasscrapy,nikescrapy2,nikescra
 import multiprocessing as mp
 from twisted.internet import defer, reactor
 from .PostsView import getPosts
-
-
-
-
+from typing import Union
 
 
 
@@ -47,7 +44,7 @@ PostsCollection = DATABASE['Posts']
 
 
 
-def sendQuery(query,listResults):
+def sendQuery(query : Union[dict],listResults : Union[list]):
     """
     run on all Collections(Adidas,Nike,Rebook,Puma) and send them query
 
@@ -60,7 +57,7 @@ def sendQuery(query,listResults):
     for each_company in listCompanys:
         listResults += each_company.find(query)
 
-def checkIfNeedToSort(sizes):
+def checkIfNeedToSort(sizes : Union[list]):
     """
     if on sizes exists least one str we don't sort sizes
 
@@ -84,7 +81,7 @@ def checkIfNeedToSort(sizes):
         sizes = sorted(sizes)
 
 
-def checkIfSizesDecimalOrChar(listResults,sizes):
+def checkIfSizesDecimalOrChar(listResults : Union[list],sizes : Union[list]):
     """
     because all sizes of product is str , so we need converte them to numbers(int,float)
 
@@ -97,10 +94,10 @@ def checkIfSizesDecimalOrChar(listResults,sizes):
     sizes(set) : empty set(to save on unique each size)
     """
 
-    def is_number(num):
+    def is_number(num : Union[str]):
 
         """
-        Example : "42.5" will be 425
+        Example : "42.5" will be "425" , "2XL" will "2XL"
 
         Returns clean number without dot(".")
         """
@@ -189,7 +186,7 @@ def getItemsFromProSide(request,**kwargs):
     return JsonResponse(products)
 
 
-def assembleQuery(listParams,nameOfParam,queryListParams,finalListQuerys):
+def assembleQuery(listParams: Union[list],nameOfParam: Union[str],queryListParams: Union[list],finalListQuerys: Union[list]):
     """
     assemble the query by all custom parameters.
 
@@ -271,7 +268,7 @@ def searchItem(request,**kwargs):
 
 
 @api_view(['GET'])
-def getItemById(request,product_code):
+def getItemById(request,product_code: Union[str]):
     """
     Get product by Id
 
