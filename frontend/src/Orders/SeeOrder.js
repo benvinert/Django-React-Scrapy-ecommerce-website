@@ -55,7 +55,8 @@ export const SeeOrder = () =>
     const orderPrices = [
         {title : "SubTotal" , price : order.orderDetails.subtotal},
         {title : "Shipping Price" , price : order.orderDetails.shipping},
-        {title : "Total" , price : order.orderDetails.total}
+        {title : "Total" , price : order.orderDetails.total},
+        {title : "Quantity" , price : order.orderDetails.quantity}
     ]
     const classes = useStyles();
 

@@ -210,7 +210,7 @@ const InItemPage = (props) =>
                         </Grid>
                     </div>
                     </RadioGroup>
-                
+                <h2>product code: {itemDetails.product_code}</h2>
                 <h2>{itemDetails.price}$</h2>
 
                 {User.isAuthenticated ? <WhichButtonToShowUser deleteFromCart={deleteFromCart} SaveChangeOnCart={SaveChangeOnCart} addToCart={addToCart} checkFromWhere={checkFromWhere} itemDetails={itemDetails} circularShow={circularShow} /> : <Button variant="outlined" onClick={() => push("/login")} color="primary">

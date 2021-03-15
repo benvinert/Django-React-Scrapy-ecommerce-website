@@ -25,7 +25,7 @@ const CheckOut = () =>
     
 
 
-    const sendRequest = async() =>
+    const addOrder = async() =>
     {
         
         const payload = {email : User.email,...orderDetailsState,name : orderDetailsState.firstName}
@@ -75,7 +75,7 @@ const CheckOut = () =>
         })
 
         setOrderDetailsState((prevState) => {return {...prevState,products : productsPayload,
-            subtotal : subtotal , shipping : shipping , total : total}});
+            subtotal : subtotal , shipping : shipping , total : total,quantity : cart.length}});
         console.log("PayloadProducts :: "  , productsPayload)
     }
     const CheckFormStatus = () =>
@@ -87,11 +87,11 @@ const CheckOut = () =>
         else if(stepOfCheckOut == 2)
         {
 
-            return <div><ItemListReview subtotal={subtotal} shipping={shipping} total={total}/><Button variant='contained' color='primary' onClick={acceptPurchase}>Place Order</Button></div>
+            return <div><ItemListReview subtotal={subtotal} shipping={shipping} total={total} quantity={cart.length}/><Button variant='contained' color='primary' onClick={acceptPurchase}>Place Order</Button></div>
         }
         else if(stepOfCheckOut == 3)
         {
-            sendRequest();
+            addOrder();
             return <div>
                         <CircularProgress/>
                         <h1>

@@ -17,12 +17,12 @@ export const AdminSendEmail = () =>
     const [users,setUsers] = useState({})
     const [selectionModel, setSelectionModel] = useState([]);
     const [showAlert,setShowAlert] = useState({flag : false,message : "Message sends to all marked customers"});
-
+    let token = localStorage.getItem("access")
 
     const sendMessage = async() => 
     {
         setButtonLoading(true)
-        let token = localStorage.getItem("access")
+        
         var payload = {'from' : User.name , 'message' : message.current['Message'].value,"to" : selectionModel}
         try
         {
@@ -54,7 +54,11 @@ export const AdminSendEmail = () =>
 
     const getUsers = async() =>
     {
-        await fetch("api/Admin/getAllUsers")          
+        await fetch("api/Admin/getAllUsers",{
+            headers : {
+                "Authorization" : "JWT " + token
+            }
+        })          
         .then((resp) => resp.json())
         .then((resp_json) => {
             console.log(resp_json);

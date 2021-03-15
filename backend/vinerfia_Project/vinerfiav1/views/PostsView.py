@@ -16,6 +16,12 @@ PostsCollection = DATABASE['Posts']
 
 
 def getPosts(request,product_code):
+    """
+    Returns :
+    
+    All Posts of product_code from database
+
+    """
     result = PostsCollection.find({"product_code" : product_code})
     print("HEREEEE")
     if(request == None):
@@ -25,7 +31,18 @@ def getPosts(request,product_code):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def addPost(request):
+    """
+    add Post to product
+    
+    assign time to post and then save that post on database
+
+    Example :
+
+    {'author': 'user@gmail.com', 'content': 'Write your product review here', 'product_code': 'fz1855', 'date': 'now'}
+
+    """
     request.data['date'] = datetime.today().strftime('%Y-%m-%d')##set the date of the post
+    print(request.data)
     postSerializer = PostSerializer(data=request.data)
     response = HttpResponse(status=200)
     if(postSerializer.is_valid()):
@@ -44,6 +61,10 @@ def addPost(request):
 @api_view(['PUT'])
 @permission_classes([IsAuthenticated])
 def editPost(request):
+    """
+    Get specific post that user want to edit and update him with new content , and time.
+
+    """
     request.data['date'] = datetime.today().strftime('%Y-%m-%d')##set the date of the post
     response = HttpResponse(status=200)
     ###########edit only content and date############

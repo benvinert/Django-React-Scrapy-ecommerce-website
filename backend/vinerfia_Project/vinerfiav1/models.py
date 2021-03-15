@@ -26,6 +26,7 @@ class Order(models.Model):
     subtotal = models.FloatField(default=0.0)
     shipping = models.FloatField(default=0.0)
     total = models.FloatField(default=0.0)
+    quantity = models.IntegerField(default=0)
 
 
 

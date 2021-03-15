@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export const ItemListReview = ({subtotal , shipping, total}) =>{
+export const ItemListReview = ({subtotal , shipping, total,quantity}) =>{
     const { cart } = useContext(CartContext);
     const {orderDetailsState,setOrderDetailsState} = useContext(OrderDetailsContext);
     
@@ -38,9 +38,10 @@ export const ItemListReview = ({subtotal , shipping, total}) =>{
 
 
     const orderPrices = [
-        {title : "SubTotal" , price : subtotal},
-        {title : "Shipping Price" , price : shipping},
-        {title : "Total" , price : total}
+        {title : "SubTotal" , price : subtotal + " $"},
+        {title : "Shipping Price" , price : shipping + " $"},
+        {title : "Total" , price : total + " $"},
+        {title : "quantity" , price : quantity}
     ]
 
     const AllPrices = () => 
