@@ -13,8 +13,7 @@ class MoshePipeline(object):
 
     def __init__(self):
         self.conn = pymongo.MongoClient(
-            'localhost',
-            27017
+            "mongodb+srv://benvinerttt:ab0548112@benproject.fzbf4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         )
         dbnames = self.conn.list_database_names()
         ifDbExists = False
@@ -36,16 +35,6 @@ class MoshePipeline(object):
         self.collection.insert(item)
         
         return item
-
-
-    # def process_item(self,item,spider):
-    #     self.list100.append(dict(item))
-    #     if(len(self.list100) <= 100):
-    #         self.collection = self.db[spider.table_name]#Name "Table" to create
-    #         self.collection.insert_many(self.list100)
-    #         self.list100.clear()
-        
-    #     return item
 
 
 
