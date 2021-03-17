@@ -25,7 +25,7 @@ import threading
 
 
 #######Connection to Database##########
-db_name = 'Products' #Database Name
+db_name = 'Products2' #Database Name
 CLIENT = MongoClient("mongodb+srv://benvinerttt:ab0548112@benproject.fzbf4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db_obj = CLIENT[db_name]
 DB_NAME_STATUS = 0 ### to switch every sync with scrapy
