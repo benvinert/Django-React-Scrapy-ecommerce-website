@@ -40,7 +40,6 @@ export default function Shoes()
     const [showAlert,setShowAlert] = useState({flag : false , message : ""});
     const inputRef = useRef("")
     
-    console.log("LOCATION ::: " , location)
     // Input : list = [{title : "category : shoes"},{title : "gender:men}]
     // function serialize all this list to different arrays to make query easyest way
     const serializeAllQuerySearchParams = (allParams) =>
@@ -88,7 +87,7 @@ export default function Shoes()
             let searchparamJson = JSON.parse(searchparam)
             setLocState(searchparamJson)
             let queryParams = serializeAllQuerySearchParams(searchparamJson)
-            let URL = `/api/All/searchItem/params=${JSON.stringify(queryParams)}`
+            URL += `/searchItem/params=${JSON.stringify(queryParams)}`
             try{
                 await fetch(URL).then((resp) => resp.json()).then((jsonReponse) => {
                     setLoading(false);

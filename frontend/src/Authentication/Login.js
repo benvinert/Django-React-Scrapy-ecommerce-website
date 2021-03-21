@@ -57,6 +57,7 @@ export default function SignIn() {
 
   // Get User Details from Server
   const loadUser = async(user_access) => {
+    console.log("U" , user_access)
     localStorage.setItem("access",user_access)
     const req = await fetch("/auth/users/me",{
       method: 'POST', // *GET, POST, PUT, DELETE, etc.
@@ -79,6 +80,7 @@ export default function SignIn() {
       email : data.email,
       password : data.password
     }
+    
     // Create JWT token and given it to user on LocalStorage
     const req = await fetch("/auth/jwt/create/",
     {

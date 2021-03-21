@@ -39,7 +39,7 @@ const InItemPage = (props) =>
     {
         try
         {
-            await fetch(`api/All/getItemById/product_code=${product_code}`)
+            await fetch(`https://backend-ben-ecommerce.herokuapp.com/api/All/getItemById/product_code=${product_code}`)
             .then((response) => response.json())
             .then((response_json) => {console.log(response_json) ; setItemDetails({...response_json,idex : idex})})
         }

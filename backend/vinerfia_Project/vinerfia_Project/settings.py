@@ -29,7 +29,7 @@ SECRET_KEY = 'dh5+sfb$ae*fp8m7bbw3pqx=1s70f)ma=uq#ebe_9zxt2&9&v^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["127.0.0.1","ben-ecommerce.herokuapp.com/"]
+ALLOWED_HOSTS = ["127.0.0.1"]
 
 
 # Application definition
@@ -50,7 +50,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'whitenoise.middleware.WhiteNoiseMiddleWare',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -96,6 +95,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'vinerfia123@gmail.com'
 #vinerfia123@gmail.com : sjsuphqpdbehujnb
+#benvinerttt@gmail.com : zjyfmisjozootdne
 EMAIL_HOST_PASSWORD = 'sjsuphqpdbehujnb'
 EMAIL_USE_TLS = True
 
