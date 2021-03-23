@@ -28,7 +28,7 @@ export default function Layout()
     useEffect(async() => {
         let token = localStorage.getItem("access")
         if(token){
-        const req = await fetch("/auth/jwt/verify/",
+        const req = await fetch("https://backend-ben-ecommerce.herokuapp.com/auth/jwt/verify/",
         {
           method: 'POST', // *GET, POST, PUT, DELETE, etc.
           mode: 'cors', // no-cors, *cors, same-origin
