@@ -9,7 +9,7 @@ export default function Layout()
 
     const loadUser = async(user_access) => {
         localStorage.setItem("access",user_access)
-        const req = await fetch("/auth/users/me",{
+        const req = await fetch("https://backend-ben-ecommerce.herokuapp.com/auth/users/me",{
           method: 'POST', // *GET, POST, PUT, DELETE, etc.
           mode: 'cors', // no-cors, *cors, same-origin
           cache: 'no-cache', // *default, no-cache, reload, force-cache, only-if-cached

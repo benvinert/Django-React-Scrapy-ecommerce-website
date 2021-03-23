@@ -81,12 +81,12 @@ WSGI_APPLICATION = 'vinerfia_Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'vinerfia',
         'HOST' : 'localhost',
-        'USER' : 'root',
-        'PASSWORD' :'0548112'
-        
+        'USER' : 'postgres',
+        'PASSWORD' :'1234',
+        'PORT' : '5432'
         
     }}
 
