@@ -6,6 +6,8 @@ ecommerce website at each hour running many processes to scrape all data from co
 and all rest of the details on MySQL,
 it's give to customer to see&buy all items in one website instead search between all 4 websites
 </h4>
+<h1>Deployed to Heroku</h1>
+<a href="https://frontend-ben-ecommerce.herokuapp.com/">ben-ecommerce</a>
 <h2>Some photos</h2>
 
 <h1>Items Page</h1>
