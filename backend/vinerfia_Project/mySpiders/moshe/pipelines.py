@@ -10,8 +10,12 @@ import pymongo
 # import mysql.connector
 
 class MoshePipeline(object):
+    
 
     def __init__(self):
+        self.count = 0
+        print("LIST CREATED")
+        self.listPer10Items = []
         self.conn = pymongo.MongoClient(
             "mongodb+srv://benvinerttt:ab0548112@benproject.fzbf4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
         )
@@ -26,14 +30,23 @@ class MoshePipeline(object):
             self.db = self.conn['Products']#Name Database
         
 
-
+    
     def process_item(self,item,spider):
         self.collection = self.db[spider.table_name]#Name "Table" to create
-        count = int(self.collection.find({}).count()) + 1
+        #count = int(self.collection.find({}).count()) + 1
         item = dict(item)
-        item.update({"_id" : count})
-        self.collection.insert(item)
-        
+        print("COUNT : " , self.count , spider.table_name)
+        item.update({"_id" : self.count})
+        self.count += 1
+        print("my list now : " , len(self.listPer10Items))
+        if(len(self.listPer10Items) <= 10):
+            self.listPer10Items.append(item)
+        else:
+            print("PUSH DATA")
+            self.collection.insert_many(self.listPer10Items)
+            self.listPer10Items.clear()
+            print("After Push" , len(self.listPer10Items))
+            self.listPer10Items.append(item)
         return item
 
 

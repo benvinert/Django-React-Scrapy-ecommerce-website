@@ -27,7 +27,7 @@ function NavBar()
     <Grid className="Navbar1" style={{position : 'fixed',zIndex : 1}} container>
         <Grid item xl={6} md={6} sm={6} xs={4}>
             <nav style={{marginLeft : "10px"}}>
-                <img src={LogoVinerfia} width='50' height='50'/>
+                
                 <Link style={{color : "white"}}>
                     <MenuIcon style={{fontSize:"50px"}} fontSize='large' onClick={() => SetSideBar(!SideBar)}/>
                 </Link>

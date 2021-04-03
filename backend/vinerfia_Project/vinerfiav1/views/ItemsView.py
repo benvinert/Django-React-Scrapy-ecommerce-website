@@ -23,9 +23,8 @@ import threading
 
 
 
-
 #######Connection to Database##########
-db_name = 'Products2' #Database Name
+db_name = 'Products' #Database Name
 CLIENT = MongoClient("mongodb+srv://benvinerttt:ab0548112@benproject.fzbf4.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 db_obj = CLIENT[db_name]
 DB_NAME_STATUS = 0 ### to switch every sync with scrapy
@@ -300,9 +299,9 @@ def multiProc(spidy):
 
 
 def startScrapRotation():
-    listSpiders = [adidasscrapy.AdidasscrapySpider]
+    listSpiders = [nikescrapy3.Nikescrapy3Spider]
     try:
-        with mp.Pool() as pool:
+        with mp.Pool(processes=4) as pool:
             pool.map(multiProc,listSpiders)
         CLIENT.drop_database(db_name)
         if(DB_NAME_STATUS == 0):
@@ -320,7 +319,7 @@ def startScrapRotation():
     globals()['Adidas'] = db_obj["Adidas"]
     globals()['Rebook'] = db_obj["Rebook"]
     globals()['Nike'] = db_obj["Nike"]
-    globals()['listCompanys'] = [Nike,Adidas]
+    globals()['listCompanys'] = [Rebook,Adidas,Nike]
     return JsonResponse({"Status" : "Success"})
 
 
@@ -334,5 +333,5 @@ def startScrapingRotation(request):
         while firstTime == 1 or not eventObj.wait(time):#when time is not none so it return true true true , 
             firstTime = 0
             func()#when timer is None it return False and start the func() and after he done func() it comes back to while() and set again time
-    setInterval(startScrapRotation,60)#Five Minutes
+    setInterval(startScrapRotation,60*5)#Five Minutes
     return JsonResponse({"OperateStatus" : "Start Interval"})

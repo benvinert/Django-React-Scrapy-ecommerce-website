@@ -81,14 +81,14 @@ WSGI_APPLICATION = 'vinerfia_Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
+        'ENGINE': 'django.db.backends.mysql', 
         'NAME': 'vinerfia',
-        'HOST' : 'localhost',
-        'USER' : 'postgres',
-        'PASSWORD' :'1234',
-        'PORT' : '5432'
-        
-    }}
+        'USER': 'DB_USER',
+        'PASSWORD': 'DB_PASSWORD',
+        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
+    }
+}
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'

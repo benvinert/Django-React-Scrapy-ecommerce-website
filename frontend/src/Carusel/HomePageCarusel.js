@@ -18,7 +18,7 @@ function HomePageCarusel(props)
         {
             img : Carusel2,
             name: "Click on button to see our Best Prices",
-            description: "Hello World!",
+            description: "-",
             btntitle : 'Men Shoes'
         }
     ]

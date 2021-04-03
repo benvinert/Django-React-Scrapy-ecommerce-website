@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+{% load i18n %}
+{% block subject %}
+{% blocktrans %}{{ site_name }} - Vinerfia order{% endblocktrans %}
+{% endblock %}
+
+
+{% block html_body %}
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .back{
+        background-color: darkseagreen;
+        width : 100%;
+        height : 100%;
+        border-radius: 2%;
+        color : aliceblue;
+        padding: 15px 15px 15px 15px;
+    }
+    td{
+        text-align: center;
+        padding: 8px 8px 8px 8px;
+    }
+    
+    .details{
+        font-size: 1.7rem;
+    }
+
+</style>
+</head>
+<body>
+<div class="back">
+<h1>{% trans "You have Order on the way" %}</h1>
+<h2>Details Order:</h2>
+<div class="details">
+    name : {{name}}<br>
+    Address : {{address}}<br>
+    City : {{city}}<br>
+</div>
+<h3>
+    <table dir="ltr" align='center' border="1">
+        <tr>
+            <td>
+                Product code
+            </td>
+            <td >
+                Image
+            </td>
+            <td>
+                name
+            </td>
+            <td>
+                color
+            </td>
+            <td>
+                size
+            </td>
+            <td>
+                brand
+            </td>
+            <td>
+                price
+            </td>
+        
+        </tr>
+    {% for each in products %}
+        <tr>
+            <td>
+                {{ each.product_code }}
+            </td>
+            <td>
+                <img src= "{{ each.image }}" width="200px" height="200px"/>
+            </td>
+            <td>
+                {{ each.name }}
+            </td>
+            <td>
+                {{ each.color }}
+            </td>
+            <td>
+                {{ each.size }}
+            </td>
+            <td>
+                {{ each.brand }}
+            </td>
+            <td>
+                {{ each.price }}
+            </td>
+        </tr>
+    {% endfor %}
+    </table>
+</h3>
+<div class="details">
+SubTotal : {{ subtotal }}$<br>
+shipping : {{ shipping }}$<br>
+Total : {{ total }}$<br>
+</div>
+<h2>
+    <p>{% trans "Thanks for using our site!" %}</p>
+    <p>{% blocktrans %}The Vinerfia team{% endblocktrans %}</p>
+</h2>
+</div>
+</body>
+{% endblock html_body %}

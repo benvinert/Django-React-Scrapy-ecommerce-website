@@ -7,8 +7,6 @@ import scrapy
 
 
 class MosheItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
     _id = scrapy.Field()
     name = scrapy.Field()
     price = scrapy.Field()
@@ -24,11 +22,3 @@ class MosheItem(scrapy.Item):
     sizes = scrapy.Field()
     product_code = scrapy.Field()
     
-# class nikeItem(scrapy.Item):
-#     name = scrapy.Field()
-#     price = scrapy.Field()
-#     gender = scrapy.Field()
-#     which_class = scrapy.Field()
-#     which_style = scrapy.Field()
-#     images = scrapy.Field()
-#     brand = scrapy.Field()
