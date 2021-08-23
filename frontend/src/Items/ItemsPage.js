@@ -21,7 +21,7 @@ import Snackbar from '@material-ui/core/Snackbar';
 import AlertMessage from '../Components/AlertMessage';
 import { ViewArray } from '@material-ui/icons';
 import TextField from '@material-ui/core/TextField';
-
+import CircularProgress from '@material-ui/core/CircularProgress';
 
 export default function Shoes()
 {
@@ -80,7 +80,7 @@ export default function Shoes()
     }
     const getItems = async() => 
     {
-        
+        setLoading(true);   
         let URL = `https://backend-ben-ecommerce.herokuapp.com/api/All`
         if(searchparam)
         {
@@ -270,7 +270,7 @@ export default function Shoes()
     return <>
     <Grid container>
         
-        <Grid style={{visibility : checkScreenSize()}} className="GridFilters" item xl={2} md={2} sm={showFilterMenu.doSpaceGrid ? 7 : 1} xs={showFilterMenu.doSpaceGrid ? 7 : 1}>
+        {Loading ? <CircularProgress/> : <Grid style={{visibility : checkScreenSize()}} className="GridFilters" item xl={2} md={2} sm={showFilterMenu.doSpaceGrid ? 7 : 1} xs={showFilterMenu.doSpaceGrid ? 7 : 1}>
             <h2>{gender} {style} {cat}</h2>
             <br></br>
             {showFilterMenu.doSpaceGrid ?<Button variant="outlined" color="primary" onClick={showFilter}> See results</Button> : null}
@@ -322,13 +322,14 @@ export default function Shoes()
             <Button onClick={() => filterBySize("")} style={{marginTop : '0.8rem'}} variant='contained' color='primary' >All Sizes</Button>
             </div>
 
-        </Grid>
+        </Grid>}
         <Grid item xl={10} md={10} sm={showFilterMenu.doSpaceGrid ? 5 : 10} xs={showFilterMenu.doSpaceGrid ? 5 : 10}>
         
             <Container  style={{borderRadius : '0%'}}  component="main" maxWidth="xl">
                 <div className="Top">
                     <AlertMessage showAlert={showAlert}/>
                     Items <br/><br/>{matches ? <div>Filters<Link><FilterListIcon fontSize="large" onClick={showFilter}/></Link></div> : null}
+                    {Loading ? <CircularProgress/> : null}
                 </div>
                 <Grid style={{padding : '15px 15px 15px 15px'}}container spacing={5}>
                     <Item loading={Loading} items={currentPosts} setshowalert={setShowAlert}/>

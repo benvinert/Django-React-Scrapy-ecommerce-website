@@ -114,9 +114,10 @@ export default function Register() {
         body: User }) // body data type must match "Content-Type" header
         .then(response => response.json())
         .then(data => {
+          window.scroll(0,0)
           data.email && setShow({txt : "Email is Already Exists",status : true,class: "error",})
           data.password && setShow({txt : "Password to short It must contain at least 8 characters (letters and numbers)",status : true,class: "error",})
-          data.id && setShow({txt : "Registered Succsesfully. Go to your Email to Activation Account",status : true,class: "success",})
+          data.id && setShow({txt : "Registered Succsesfully. Go to your Email to Activate you're Account",status : true,class: "success",})
         }
         )
       push("/Register");

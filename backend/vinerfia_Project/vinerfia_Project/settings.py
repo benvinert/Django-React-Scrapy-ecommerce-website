@@ -15,7 +15,6 @@ from datetime import timedelta
 import django
 
 
-
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -81,28 +80,22 @@ WSGI_APPLICATION = 'vinerfia_Project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql', 
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'vinerfia',
-        'USER': 'DB_USER',
-        'PASSWORD': 'DB_PASSWORD',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    }
-}
+        'HOST': 'localhost',
+        'USER': 'root',
+        'PASSWORD': '0548112'
+
+    }}
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'vinerfia123@gmail.com'
-#vinerfia123@gmail.com : sjsuphqpdbehujnb
-#benvinerttt@gmail.com : zjyfmisjozootdne
+# vinerfia123@gmail.com : sjsuphqpdbehujnb
+# benvinerttt@gmail.com : zjyfmisjozootdne
 EMAIL_HOST_PASSWORD = 'sjsuphqpdbehujnb'
 EMAIL_USE_TLS = True
-
-
-
-
-
 
 
 # Password validation
@@ -138,8 +131,6 @@ USE_L10N = True
 USE_TZ = True
 
 
-
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
@@ -149,7 +140,7 @@ STATIC_URL = '/static/'
 AUTH_USER_MODEL = "UserAuth.UserAccount"
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSIO_CLASSES' : [
+    'DEFAULT_PERMISSIO_CLASSES': [
         'rest_framework.permissions.isAuthenticated'
     ],
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -158,28 +149,28 @@ REST_FRAMEWORK = {
 }
 
 SIMPLE_JWT = {
-   'AUTH_HEADER_TYPES': ('JWT',),
-   'JWT_VERIFY_EXPIRATION': False,
-   'ACCESS_TOKEN_LIFETIME': timedelta(days=10),
-   'REFRESH_TOKEN_LIFETIME': timedelta(days=4),
+    'AUTH_HEADER_TYPES': ('JWT',),
+    'JWT_VERIFY_EXPIRATION': False,
+    'ACCESS_TOKEN_LIFETIME': timedelta(days=10),
+    'REFRESH_TOKEN_LIFETIME': timedelta(days=4),
 }
 
 DJOSER = {
-    'LOGIN_FIELD' : 'email',
-    'USER_CREATE_PASSWORD_RETYPE' : True,
-    'USERNAME_CHANGED_EMAIL_CONFIRMATION' : True,
-    'PASSWORD_CHANGED_EMAIL_CONFIRMATION' : True,
-    'SEND_CONFIRMATION_EMAIL' : True,
-    'SET_USERNAME_RETYPE' : True,
-    'SET_PASSWORD_RETYPE' : True,
-    'PASSWORD_RESET_CONFIRM_URL' : 'password/reset/confirm/{uid}/{token}',
-    'USERNAME_RESET_CONFIRM_URL' : 'email/reset/confirm/{uid}/{token}',
-    'ACTIVATION_URL' : 'activate/{uid}/{token}',
-    'SEND_ACTIVATION_EMAIL' : True,
-    'SERIALIZERS' : {
-        'user_create' : 'UserAuth.serializers.UserCreateSerializer',
-        'user' : 'UserAuth.serializers.UserCreateSerializer',
-        'user_delete' : 'djoser.serializers.UserDeleteSerializer',
+    'LOGIN_FIELD': 'email',
+    'USER_CREATE_PASSWORD_RETYPE': True,
+    'USERNAME_CHANGED_EMAIL_CONFIRMATION': True,
+    'PASSWORD_CHANGED_EMAIL_CONFIRMATION': True,
+    'SEND_CONFIRMATION_EMAIL': True,
+    'SET_USERNAME_RETYPE': True,
+    'SET_PASSWORD_RETYPE': True,
+    'PASSWORD_RESET_CONFIRM_URL': 'password/reset/confirm/{uid}/{token}',
+    'USERNAME_RESET_CONFIRM_URL': 'email/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': 'activate/{uid}/{token}',
+    'SEND_ACTIVATION_EMAIL': True,
+    'SERIALIZERS': {
+        'user_create': 'UserAuth.serializers.UserCreateSerializer',
+        'user': 'UserAuth.serializers.UserCreateSerializer',
+        'user_delete': 'djoser.serializers.UserDeleteSerializer',
     }
 }
 
