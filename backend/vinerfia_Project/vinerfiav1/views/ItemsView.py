@@ -150,27 +150,22 @@ def getItemsFromProSide(request,**kwargs):
             query = {"kids_gender" : kwargs['kids_gender'],"which_style" : kwargs['param'],"$nor" : [{"Category" : {"$regex" : ".*" + "shoe" + ".*","$options" : "i"}}]}
         else:
             query = {"kids_gender" : kwargs['kids_gender'] ,"which_style" : kwargs['param'] ,"Category" : {"$regex" : ".*" + kwargs['category'] + ".*"}}
-        sendQuery(query,listResults)
     elif(kwargs['category'] == "All"):
         query = {"gender" : kwargs['gender'],"$nor" : [{"Category" : {"$regex" : ".*" + "shoe" + ".*","$options" : "i"}},{"which_style" : {"$regex" : ".*" + "slide" + ".*|.*sandal.*","$options" : "i"}}]}
-        sendQuery(query,listResults)
     #if we have Param/Style of item
     elif(kwargs.get('param')):
         if(kwargs['param'] == "slide"):
             query = {"gender" : kwargs['gender'],"Category" : {"$regex" : ".*" + kwargs['category'] + ".*"},"name" : {"$regex" : ".*" + kwargs['param'] + ".*","$options" : 'i'}}
         else:
             query = {"gender" : kwargs['gender'],"Category" : {"$regex" : ".*" + kwargs['category'] + ".*"},"which_style" : {"$regex" : ".*" + kwargs['param'] + ".*","$options" : 'i'}}
-        sendQuery(query,listResults)
 
     elif(kwargs['category'] == "top"):
         query = {"gender" : kwargs['gender'],"Category" : {"$regex" : ".*" + kwargs['category'] + ".*|.*t-shirt.*"}}
-        sendQuery(query,listResults)
     ####if all conditions are false so we got all shoes
     else:
         query = {"gender" : kwargs['gender'],"Category" : {"$regex" : ".*" + kwargs['category'] + ".*"}}
-        sendQuery(query,listResults)
-
-
+        
+    sendQuery(query,listResults)
     #this part is handled to give us all sizes of items
     sizes = {}
     sizes = set(sizes)
