@@ -17,6 +17,7 @@ import { Alert, AlertTitle } from "@material-ui/lab";
 import { UserContext } from "../Context/UserContext";
 import { useHistory } from "react-router";
 import EmailIcon from "@material-ui/icons/Email";
+import { EndPoints } from "../CONSTS/EndPoints";
 
 function Copyright() {
   return (
@@ -63,7 +64,7 @@ export default function SignIn() {
   const loadUser = async (user_access) => {
     console.log("U", user_access);
     localStorage.setItem("access", user_access);
-    const req = await fetch("/auth/users/me", {
+    const req = await fetch(`${EndPoints.GET_USER_DATA}`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -97,7 +98,7 @@ export default function SignIn() {
     };
 
     // Create JWT token and given it to user on LocalStorage
-    const req = await fetch("/auth/jwt/create/", {
+    const req = await fetch(`${EndPoints.CREATE_JWT_TOKEN}`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

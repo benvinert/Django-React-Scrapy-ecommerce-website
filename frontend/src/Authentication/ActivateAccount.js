@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
+import { EndPoints } from "../CONSTS/EndPoints";
 
 export default function ActivateAccount() {
   const { uid, token } = useParams();
@@ -10,7 +11,7 @@ export default function ActivateAccount() {
       token: token,
     };
 
-    const req = await fetch("/auth/users/activation/", {
+    const req = await fetch(`${EndPoints.ACTIVATE_JWT_TOKEN}`), {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
