@@ -287,7 +287,6 @@ def getItemById(request,product_code: Union[str]):
 def multiProc(spidy):
     runner = CrawlerRunner()
     d = runner.crawl(spidy)
-    print("yes")
     d.addBoth(lambda _: reactor.stop())
     reactor.run()
 

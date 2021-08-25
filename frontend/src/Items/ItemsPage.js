@@ -22,6 +22,7 @@ import AlertMessage from '../Components/AlertMessage';
 import { ViewArray } from '@material-ui/icons';
 import TextField from '@material-ui/core/TextField';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import { EndPoints, SERVER_PATH } from '../CONSTS/EndPoints';
 
 export default function Shoes()
 {
@@ -81,7 +82,7 @@ export default function Shoes()
     const getItems = async() => 
     {
         setLoading(true);   
-        let URL = `https://backend-ben-ecommerce.herokuapp.com/api/All`
+        let URL = `${SERVER_PATH}${EndPoints.GET_ALL_ITEMS}`
         if(searchparam)
         {
             let searchparamJson = JSON.parse(searchparam)
