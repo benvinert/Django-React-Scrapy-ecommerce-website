@@ -43,7 +43,7 @@ export const SeeOrder = () => {
       credentials: "same-origin", // include, *same-origin, omit
       headers: {
         "Content-Type": "application/json",
-        Authorization: "JWT " + token,
+        Authorization: JWT_PREFIX_TOKEN + token,
       },
     })
       .then((resp) => resp.json())

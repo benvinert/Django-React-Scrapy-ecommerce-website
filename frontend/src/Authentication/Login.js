@@ -70,13 +70,13 @@ export default function SignIn() {
     console.log("U", user_access);
     localStorage.setItem(ACCESS_JWT_TOKEN, user_access);
     const req = await fetch(`${SERVER_PATH}${USER_DATA.GET_USER_DATA}`, {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
+      method: "GET", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
       credentials: "same-origin", // include, *same-origin, omit
       headers: {
         "Content-Type": "application/json",
-        Authorization: "JWT " + user_access,
+        Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + user_access,
       },
     })
       .then((resp) => resp.json())

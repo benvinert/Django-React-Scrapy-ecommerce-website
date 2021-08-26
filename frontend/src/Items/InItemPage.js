@@ -13,7 +13,11 @@ import { Alert, AlertTitle } from "@material-ui/lab";
 import Slide from "@material-ui/core/Slide";
 import { WhichButtonToShowUser } from "./WhichButtonToShowUser";
 import { ReviewItems } from "./ReviewItems";
-import { ITEMS_URLS, SERVER_PATH } from "../Definitions/EndPoints";
+import {
+  ITEMS_URLS,
+  SERVER_PATH,
+  AUTHORIZATION,
+} from "../Definitions/EndPoints";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 
 const InItemPage = (props) => {
@@ -172,7 +176,7 @@ const InItemPage = (props) => {
         credentials: "same-origin", // include, *same-origin, omit
         headers: {
           "Content-Type": "application/json",
-          Authorization: "JWT " + token,
+          Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
         },
         redirect: "follow", // manual, *follow, error
         referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url

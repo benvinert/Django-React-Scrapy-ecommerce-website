@@ -12,6 +12,7 @@ import {
   ADMIN_URLS,
 } from "../Definitions/EndPoints";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
+import { DefineRequest } from "../Definitions/DefineRequest";
 
 export const AdminSendEmail = () => {
   const message = useRef();
@@ -34,20 +35,15 @@ export const AdminSendEmail = () => {
       message: message.current["Message"].value,
       to: selectionModel,
     };
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
+    };
     try {
-      await fetch(`${SERVER_PATH}${AUTHORIZATION.ADMIN_SEND_EMAIL}`, {
-        method: "POST",
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(payload),
-      })
+      await fetch(
+        `${SERVER_PATH}${AUTHORIZATION.ADMIN_SEND_EMAIL}`,
+        DefineRequest("POST", payload, headers)
+      )
         .then((resp) => resp.json())
         .then((resp_json) =>
           resp_json.status == "success" ? setButtonLoading(false) : null

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { useHistory, useParams } from "react-router-dom";
+import { DefineRequest } from "../Definitions/DefineRequest";
 import { SERVER_PATH, AUTHORIZATION } from "../Definitions/EndPoints";
 
 export default function ActivateAccount() {
@@ -13,18 +14,8 @@ export default function ActivateAccount() {
 
     const req = await fetch(
       `${SERVER_PATH}${AUTHORIZATION.ACTIVATE_JWT_TOKEN}`,
-      {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(payload),
-      }
+
+      DefineRequest("POST", payload, { "Content-Type": "application/json" })
     ) // body data type must match "Content-Type" header
       .then((resp) => console.log("Respo : ", resp));
   };
