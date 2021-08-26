@@ -17,7 +17,12 @@ import { Alert, AlertTitle } from "@material-ui/lab";
 import { UserContext } from "../Context/UserContext";
 import { useHistory } from "react-router";
 import EmailIcon from "@material-ui/icons/Email";
-import { EndPoints } from "../CONSTS/EndPoints";
+import {
+  AUTHORIZATION,
+  SERVER_PATH,
+  USER_DATA,
+} from "../Definitions/EndPoints";
+import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 
 function Copyright() {
   return (
@@ -63,8 +68,8 @@ export default function SignIn() {
   // Get User Details from Server
   const loadUser = async (user_access) => {
     console.log("U", user_access);
-    localStorage.setItem("access", user_access);
-    const req = await fetch(`${EndPoints.GET_USER_DATA}`, {
+    localStorage.setItem(ACCESS_JWT_TOKEN, user_access);
+    const req = await fetch(`${SERVER_PATH}${USER_DATA.GET_USER_DATA}`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -98,7 +103,7 @@ export default function SignIn() {
     };
 
     // Create JWT token and given it to user on LocalStorage
-    const req = await fetch(`${EndPoints.CREATE_JWT_TOKEN}`, {
+    const req = await fetch(`${SERVER_PATH}${AUTHORIZATION.CREATE_JWT_TOKEN}`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

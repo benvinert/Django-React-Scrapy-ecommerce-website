@@ -10,6 +10,7 @@ import App from "../App.css";
 import { UserContext } from "../Context/UserContext";
 import DropDownButton from "./DropDownButton";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
+import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 
 function NavBar() {
   const { push } = useHistory();
@@ -18,7 +19,7 @@ function NavBar() {
 
   //Remove Token and set Auth to false
   const Logout = () => {
-    localStorage.removeItem("access");
+    localStorage.removeItem(ACCESS_JWT_TOKEN);
     setUser((prevState) => {
       return { ...prevState, isAuthenticated: false };
     });

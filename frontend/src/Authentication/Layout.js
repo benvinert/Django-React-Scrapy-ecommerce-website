@@ -1,13 +1,18 @@
 import React, { useState, useContext, useEffect } from "react";
-import { SERVER_PATH } from "../CONSTS/EndPoints";
+import {
+  AUTHORIZATION,
+  SERVER_PATH,
+  USER_DATA,
+} from "../Definitions/EndPoints";
 import { UserContext } from "../Context/UserContext";
+import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 
 export default function Layout() {
   const { User, setUser } = useContext(UserContext);
 
   const loadUser = async (user_access) => {
-    localStorage.setItem("access", user_access);
-    const req = await fetch(`${SERVER_PATH}/auth/users/me`, {
+    localStorage.setItem(ACCESS_JWT_TOKEN, user_access);
+    const req = await fetch(`${SERVER_PATH}${USER_DATA.GET_USER_DATA}`, {
       method: "POST", // *GET, POST, PUT, DELETE, etc.
       mode: "cors", // no-cors, *cors, same-origin
       cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
@@ -32,9 +37,9 @@ export default function Layout() {
   };
 
   useEffect(async () => {
-    let token = localStorage.getItem("access");
+    let token = localStorage.getItem(ACCESS_JWT_TOKEN);
     if (token) {
-      const req = await fetch(`${SERVER_PATH}/auth/jwt/verify/`, {
+      const req = await fetch(`${SERVER_PATH}${AUTHORIZATION.JWT_VERIFY}`, {
         method: "POST", // *GET, POST, PUT, DELETE, etc.
         mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached

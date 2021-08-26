@@ -13,7 +13,8 @@ import { Alert, AlertTitle } from "@material-ui/lab";
 import Slide from "@material-ui/core/Slide";
 import { WhichButtonToShowUser } from "./WhichButtonToShowUser";
 import { ReviewItems } from "./ReviewItems";
-import { EndPoints, SERVER_PATH } from "../CONSTS/EndPoints";
+import { ITEMS_URLS, SERVER_PATH } from "../Definitions/EndPoints";
+import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 
 const InItemPage = (props) => {
   const location = useLocation();
@@ -40,7 +41,7 @@ const InItemPage = (props) => {
 
   const requestGetItemById = async (product_code, idex) => {
     try {
-      await fetch(`${SERVER_PATH}${EndPoints.GET_ITEM_BY_ID}${product_code}`)
+      await fetch(`${SERVER_PATH}${ITEMS_URLS.GET_ITEM_BY_ID}${product_code}`)
         .then((response) => response.json())
         .then((response_json) => {
           console.log(response_json);
@@ -149,7 +150,7 @@ const InItemPage = (props) => {
 
   const sendPost = async (whichOperator, postId) => {
     let product_code = location.pathname.split("=")[1];
-    let token = localStorage.getItem("access");
+    let token = localStorage.getItem(ACCESS_JWT_TOKEN);
     let valOfPost = postContent.current;
     console.log(valOfPost["PostContent"].value);
     var payload = {

@@ -6,7 +6,12 @@ import { UserContext } from "../Context/UserContext";
 import TableUsers from "./TableUsers";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import AlertMessage from "../Components/AlertMessage";
-import { EndPoints, Authorization } from "../CONSTS/EndPoints";
+import {
+  SERVER_PATH,
+  AUTHORIZATION,
+  ADMIN_URLS,
+} from "../Definitions/EndPoints";
+import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 
 export const AdminSendEmail = () => {
   const message = useRef();
@@ -19,7 +24,7 @@ export const AdminSendEmail = () => {
     flag: false,
     message: "Message sends to all marked customers",
   });
-  let token = localStorage.getItem("access");
+  let token = localStorage.getItem(ACCESS_JWT_TOKEN);
 
   const sendMessage = async () => {
     setButtonLoading(true);
@@ -30,14 +35,14 @@ export const AdminSendEmail = () => {
       to: selectionModel,
     };
     try {
-      await fetch(EndPoints.ADMIN_SEND_EMAIL, {
+      await fetch(`${SERVER_PATH}${AUTHORIZATION.ADMIN_SEND_EMAIL}`, {
         method: "POST",
         mode: "cors", // no-cors, *cors, same-origin
         cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
         credentials: "same-origin", // include, *same-origin, omit
         headers: {
           "Content-Type": "application/json",
-          Authorization: Authorization.JWT_PREFIX_TOKEN + token,
+          Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
         },
         redirect: "follow", // manual, *follow, error
         referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
@@ -63,9 +68,9 @@ export const AdminSendEmail = () => {
   };
 
   const getUsers = async () => {
-    await fetch(EndPoints.ADMIN_GET_ALL_USERS, {
+    await fetch(ADMIN_URLS.ADMIN_GET_ALL_USERS, {
       headers: {
-        Authorization: Authorization.JWT_PREFIX_TOKEN + token,
+        Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
       },
     })
       .then((resp) => resp.json())
