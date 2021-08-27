@@ -272,7 +272,7 @@ export default function Shoes() {
         return { visibility: "hidden", display: "none" };
       }
     }
-    return "visible";
+    return { visibility: "visible", display: "block" };
   };
 
   return (
