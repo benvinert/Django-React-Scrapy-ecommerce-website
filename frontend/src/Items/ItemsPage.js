@@ -295,9 +295,13 @@ export default function Shoes() {
             </h2>
             <br></br>
             {showFilterMenu.doSpaceGrid ? (
-              <Button variant="outlined" color="primary" onClick={showFilter}>
+              <Button
+                variant="contained"
+                color="secondary"
+                onClick={showFilter}
+              >
                 {" "}
-                See results
+                Close Filter
               </Button>
             ) : null}
             <h3>Filter By Price</h3>
@@ -336,7 +340,7 @@ export default function Shoes() {
             />
             <Button
               style={{ marginTop: "0.5rem" }}
-              variant="outlined"
+              variant="contained"
               color="primary"
               onClick={handleChangeColor}
             >
