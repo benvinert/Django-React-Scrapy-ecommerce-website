@@ -10,6 +10,8 @@ import { UserContext } from "../Context/UserContext";
 import { useHistory } from "react-router";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
+import { DefineRequest } from "../Definitions/DefineRequest";
+import { AUTHORIZATION, ORDERS_URLS } from "../Definitions/EndPoints";
 
 const CheckOut = () => {
   const { push } = useHistory();
@@ -33,19 +35,17 @@ const CheckOut = () => {
     console.log(payload);
     try {
       let token = localStorage.getItem(ACCESS_JWT_TOKEN);
-      await fetch("/api/All/addtohistoryorders", {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: JWT_PREFIX_TOKEN + token,
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(payload),
-      }).then((resp) => {
+      await fetch(
+        ORDERS_URLS.ADD_ORDER_TO_HISTORY,
+        DefineRequest(
+          "POST",
+          {
+            "Content-Type": "application/json",
+            Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
+          },
+          payload
+        )
+      ).then((resp) => {
         if (resp.status == 200) {
           setStepOfCheckOut((prev) => (prev += 1));
           setCart([]);

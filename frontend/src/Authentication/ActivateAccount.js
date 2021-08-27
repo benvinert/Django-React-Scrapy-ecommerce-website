@@ -12,17 +12,16 @@ export default function ActivateAccount() {
       token: token,
     };
 
-    const req = await fetch(
+    await fetch(
       `${SERVER_PATH}${AUTHORIZATION.ACTIVATE_JWT_TOKEN}`,
 
-      DefineRequest("POST", payload, { "Content-Type": "application/json" })
+      DefineRequest("POST", { "Content-Type": "application/json" }, payload)
     ) // body data type must match "Content-Type" header
       .then((resp) => console.log("Respo : ", resp));
   };
 
   useEffect(() => {
     ActivateRequest();
-    console.log("YESSS");
   }, []);
 
   return (

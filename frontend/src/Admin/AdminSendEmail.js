@@ -42,7 +42,7 @@ export const AdminSendEmail = () => {
     try {
       await fetch(
         `${SERVER_PATH}${AUTHORIZATION.ADMIN_SEND_EMAIL}`,
-        DefineRequest("POST", payload, headers)
+        DefineRequest("POST", headers, payload)
       )
         .then((resp) => resp.json())
         .then((resp_json) =>

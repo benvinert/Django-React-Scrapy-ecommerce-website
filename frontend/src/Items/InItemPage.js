@@ -19,6 +19,7 @@ import {
   AUTHORIZATION,
 } from "../Definitions/EndPoints";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
+import { DefineRequest } from "../Definitions/DefineRequest";
 
 const InItemPage = (props) => {
   const location = useLocation();
@@ -168,26 +169,20 @@ const InItemPage = (props) => {
       method = "PUT";
     }
     console.log("sended Payload :: ", payload, "POSTIDD::", postId);
-    try {
-      await fetch(`api/All/${whichOperator}`, {
-        method: method, // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: JSON.stringify(payload),
-      }).then((resp) => {
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
+    };
+
+    await fetch(
+      `${ITEMS_URLS.GET_ALL_ITEMS}${whichOperator}`,
+      DefineRequest(method, headers, payload)
+    )
+      .then((resp) => {
         setUserPostLoading(true);
         setTimeout(() => setUserPostLoading(false), 2000);
-      }); // body data type must match "Content-Type" header)
-    } catch {
-      push("errorpage");
-    }
+      })
+      .catch(() => push("errorpage"));
   };
 
   return (

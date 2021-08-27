@@ -23,6 +23,7 @@ import {
   USER_DATA,
 } from "../Definitions/EndPoints";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
+import { DefineRequest } from "../Definitions/DefineRequest";
 
 function Copyright() {
   return (
@@ -69,16 +70,13 @@ export default function SignIn() {
   const loadUser = async (user_access) => {
     console.log("U", user_access);
     localStorage.setItem(ACCESS_JWT_TOKEN, user_access);
-    const req = await fetch(`${SERVER_PATH}${USER_DATA.GET_USER_DATA}`, {
-      method: "GET", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
+    await fetch(
+      `${SERVER_PATH}${USER_DATA.GET_USER_DATA}`,
+      DefineRequest("GET", {
         "Content-Type": "application/json",
         Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + user_access,
-      },
-    })
+      })
+    )
       .then((resp) => resp.json())
       .then((resp_json) =>
         setUser((prevState) => {
@@ -101,20 +99,12 @@ export default function SignIn() {
       email: data.email,
       password: data.password,
     };
-
-    // Create JWT token and given it to user on LocalStorage
-    const req = await fetch(`${SERVER_PATH}${AUTHORIZATION.CREATE_JWT_TOKEN}`, {
-      method: "POST", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
-        "Content-Type": "application/json",
-      },
-      redirect: "follow", // manual, *follow, error
-      referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-      body: JSON.stringify(payload),
-    }) // body data type must match "Content-Type" header
+    const headers = { "Content-Type": "application/json" };
+    // Create JWT token and put it on user LocalStorage
+    await fetch(
+      `${SERVER_PATH}${AUTHORIZATION.CREATE_JWT_TOKEN}`,
+      DefineRequest("POST", headers, payload)
+    ) // body data type must match "Content-Type" header
       .then((resp) => resp.json())
       .then((resp_json) => {
         console.log(resp_json);

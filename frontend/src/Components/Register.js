@@ -21,6 +21,8 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import { useForm } from "react-hook-form";
+import { USER_DATA } from "../Definitions/EndPoints";
+import { DefineRequest } from "../Definitions/DefineRequest";
 
 function Copyright() {
   return (
@@ -92,19 +94,10 @@ export default function Register() {
 
   async function onSubmit(data) {
     if (data.password == data.re_password) {
-      User = JSON.stringify(data);
-      const response = await fetch("auth/users/", {
-        method: "POST", // *GET, POST, PUT, DELETE, etc.
-        mode: "cors", // no-cors, *cors, same-origin
-        cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-        credentials: "same-origin", // include, *same-origin, omit
-        headers: {
-          "Content-Type": "application/json",
-        },
-        redirect: "follow", // manual, *follow, error
-        referrerPolicy: "no-referrer", // no-referrer, *no-referrer-when-downgrade, origin, origin-when-cross-origin, same-origin, strict-origin, strict-origin-when-cross-origin, unsafe-url
-        body: User,
-      }) // body data type must match "Content-Type" header
+      const response = await fetch(
+        USER_DATA.REGISTER_USER,
+        DefineRequest("POST", { "Content-Type": "application/json" }, data)
+      )
         .then((response) => response.json())
         .then((data) => {
           window.scroll(0, 0);

@@ -12,6 +12,8 @@ import Image from "material-ui-image";
 import Container from "@material-ui/core/Container";
 import { useHistory, useParams } from "react-router-dom";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
+import { AUTHORIZATION, ORDERS_URLS } from "../Definitions/EndPoints";
+import { DefineRequest } from "../Definitions/DefineRequest";
 
 const useStyles = makeStyles((theme) => ({
   listItem: {
@@ -36,22 +38,19 @@ export const SeeOrder = () => {
   });
   const getOrderById = async () => {
     let token = localStorage.getItem(ACCESS_JWT_TOKEN);
-    await fetch(`api/All/getOneOrderByOrderNumber/orderNumber=${orderid}`, {
-      method: "GET", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: JWT_PREFIX_TOKEN + token,
-      },
-    })
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
+    };
+    await fetch(
+      `${ORDERS_URLS.GET_ONE_ORDER_BY_ORDER_NUMBER}${orderid}`,
+      DefineRequest("GET", headers)
+    )
       .then((resp) => resp.json())
       .then((resp_json) => setOrder(resp_json));
   };
   useEffect(() => {
     getOrderById();
-    console.log("dsadsa");
   }, []);
 
   const orderPrices = [

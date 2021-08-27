@@ -22,7 +22,12 @@ import AlertMessage from "../Components/AlertMessage";
 import { ViewArray } from "@material-ui/icons";
 import TextField from "@material-ui/core/TextField";
 import CircularProgress from "@material-ui/core/CircularProgress";
-import { ITEMS_URLS, SERVER_PATH } from "../Definitions/EndPoints";
+import {
+  FIRST_PAGE,
+  ITEMS_URLS,
+  PARAMS_TO_SEARCH,
+  SERVER_PATH,
+} from "../Definitions/EndPoints";
 
 export default function Shoes() {
   const { push, location } = useHistory();
@@ -104,62 +109,63 @@ export default function Shoes() {
       let searchparamJson = JSON.parse(searchparam);
       setLocState(searchparamJson);
       let queryParams = serializeAllQuerySearchParams(searchparamJson);
-      URL += `/searchItem/params=${JSON.stringify(queryParams)}`;
-      try {
-        await fetch(URL)
-          .then((resp) => resp.json())
-          .then((jsonReponse) => {
-            setLoading(false);
-            setAllitems(jsonReponse); // set Items
-            setShowItems(jsonReponse);
-            setFilterState({
-              maxPrice: jsonReponse.maxPrice,
-              minPrice: jsonReponse.minPrice,
-              colours: "",
-              size: "",
-            });
+      URL += `${ITEMS_URLS.SEARCH_ITEMS_BY_PARAMS}${JSON.stringify(
+        queryParams
+      )}`;
+      await fetch(URL)
+        .then((resp) => resp.json())
+        .then((jsonReponse) => {
+          setLoading(false);
+          setAllitems(jsonReponse); // set Items
+          setShowItems(jsonReponse);
+          setFilterState({
+            maxPrice: jsonReponse.maxPrice,
+            minPrice: jsonReponse.minPrice,
+            colours: "",
+            size: "",
           });
-      } catch (e) {
-        push("/errorpage");
-        console.log("Server is down.");
-      }
+        })
+        .catch((e) => {
+          push("/errorpage");
+          console.log("Server is down.");
+        });
     } else if (gender) {
       //  Send Request to backEnd //
-      URL += `/gender=${gender}`;
+      URL += `${PARAMS_TO_SEARCH.GENDER}${gender}/`;
       if (gender != "kids") {
-        URL += `/category=${cat}`;
+        URL += `${PARAMS_TO_SEARCH.CATEGORY}${cat}/`;
         if (style) {
-          URL += `/style=${style}`;
+          URL += `${PARAMS_TO_SEARCH.STYLE}${style}/`;
         }
       } else {
-        URL += `/kids_gender=${kids_gender}/style=${style}/category=${cat}`;
+        URL += `${PARAMS_TO_SEARCH.KIDS_GENDER}${kids_gender}/${PARAMS_TO_SEARCH.STYLE}${style}/${PARAMS_TO_SEARCH.CATEGORY}${cat}`;
       }
-      try {
-        await fetch(URL)
-          .then((response) => {
-            return response.json();
-          })
-          .then((resp_json) => {
-            setLoading(false);
-            setAllitems(resp_json); // set Items
-            setShowItems(resp_json);
-            setFilterState({
-              maxPrice: resp_json.maxPrice,
-              minPrice: resp_json.minPrice,
-              colours: "",
-              size: "",
-            });
+
+      await fetch(URL)
+        .then((response) => {
+          return response.json();
+        })
+        .then((resp_json) => {
+          setLoading(false);
+          setAllitems(resp_json); // set Items
+          setShowItems(resp_json);
+          setFilterState({
+            maxPrice: resp_json.maxPrice,
+            minPrice: resp_json.minPrice,
+            colours: "",
+            size: "",
           });
-      } catch (e) {
-        push("/errorpage");
-        console.log("Server is down.");
-      }
+        })
+        .catch((e) => {
+          push("/errorpage");
+          console.log("Server is down.");
+        });
     }
-    setCurrentPage(1);
+    setCurrentPage(FIRST_PAGE);
   };
   useEffect(() => {
     getItems();
-    setCurrentPage(1); // if we change url we need to be on first page
+    setCurrentPage(FIRST_PAGE); // if we change url we need to be on first page
   }, [gender, cat, style, location.querySearchParams]);
 
   //Pagination//

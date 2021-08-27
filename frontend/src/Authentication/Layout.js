@@ -13,16 +13,14 @@ export default function Layout() {
 
   const loadUser = async (user_access) => {
     localStorage.setItem(ACCESS_JWT_TOKEN, user_access);
-    const req = await fetch(`${SERVER_PATH}${USER_DATA.GET_USER_DATA}`, {
-      method: "GET", // *GET, POST, PUT, DELETE, etc.
-      mode: "cors", // no-cors, *cors, same-origin
-      cache: "no-cache", // *default, no-cache, reload, force-cache, only-if-cached
-      credentials: "same-origin", // include, *same-origin, omit
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + user_access,
-      },
-    })
+    const headers = {
+      "Content-Type": "application/json",
+      Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + user_access,
+    };
+    await fetch(
+      `${SERVER_PATH}${USER_DATA.GET_USER_DATA}`,
+      DefineRequest("GET", headers)
+    )
       .then((resp) => resp.json())
       .then((resp_json) =>
         setUser((prevState) => {
@@ -40,12 +38,12 @@ export default function Layout() {
   useEffect(async () => {
     let token = localStorage.getItem(ACCESS_JWT_TOKEN);
     if (token) {
-      const req = await fetch(
+      await fetch(
         `${SERVER_PATH}${AUTHORIZATION.JWT_VERIFY}`,
         DefineRequest(
           "POST",
-          { token: token },
-          { "Content-Type": "application/json" }
+          { "Content-Type": "application/json" },
+          { token: token }
         )
       ).then((resp) =>
         resp.status == 200
