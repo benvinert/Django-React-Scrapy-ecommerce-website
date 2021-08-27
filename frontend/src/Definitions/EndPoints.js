@@ -1,4 +1,6 @@
 export const SERVER_PATH = "https://backend-ben-ecommerce.herokuapp.com/";
+export const FRONT_END_SERVER_PATH =
+  "https://frontend-ben-ecommerce.herokuapp.com/";
 export const PREFIX_PATH = "api/All/";
 export const FIRST_PAGE = 1;
 export const USER_DATA = {
@@ -32,7 +34,7 @@ export const ADMIN_URLS = {
 };
 
 export const ORDERS_URLS = {
-  ADD_ORDER_TO_HISTORY: "api/All/addtohistoryorders/",
+  ADD_ORDER_TO_HISTORY: "api/All/addtohistoryorders",
   GET_ORDERS_BY_EMAIL: "api/All/getOrdersByEmail/email=",
   GET_ONE_ORDER_BY_ORDER_NUMBER:
     "api/All/getOneOrderByOrderNumber/orderNumber=",

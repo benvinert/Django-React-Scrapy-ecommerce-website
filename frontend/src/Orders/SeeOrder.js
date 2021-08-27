@@ -79,7 +79,11 @@ export const SeeOrder = () => {
   };
   return (
     <>
-      <Container component="main" maxWidth="md">
+      <Container
+        component="main"
+        maxWidth="md"
+        style={{ backgroundColor: "lightgray", borderRadius: 5 }}
+      >
         <Typography variant="h6" gutterBottom>
           Order Details of {order.orderDetails.orderNumber}
         </Typography>

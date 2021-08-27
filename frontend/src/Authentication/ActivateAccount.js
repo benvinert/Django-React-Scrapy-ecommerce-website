@@ -27,7 +27,11 @@ export default function ActivateAccount() {
   return (
     <>
       <div align="center">
-        <h1>Account Activated!</h1>
+        <h1>
+          You're Account is Activated! you can go now to login and buy our
+          products
+        </h1>
+        <h2>Have fun!</h2>
       </div>
     </>
   );

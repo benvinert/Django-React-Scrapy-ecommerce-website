@@ -21,15 +21,19 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import { useForm } from "react-hook-form";
-import { SERVER_PATH, USER_DATA } from "../Definitions/EndPoints";
+import {
+  FRONT_END_SERVER_PATH,
+  SERVER_PATH,
+  USER_DATA,
+} from "../Definitions/EndPoints";
 import { DefineRequest } from "../Definitions/DefineRequest";
 
 function Copyright() {
   return (
     <Typography variant="body2" color="textSecondary" align="center">
       {"Copyright © "}
-      <Link color="inherit" href="https://material-ui.com/">
-        Your Website
+      <Link color="inherit" href={`${FRONT_END_SERVER_PATH}`}>
+        Vinerfia.com
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
@@ -159,7 +163,7 @@ export default function Register() {
                 required
                 fullWidth
                 id="name"
-                label="name"
+                label="Name"
                 autoFocus
               />
             </Grid>
@@ -233,18 +237,12 @@ export default function Register() {
                 autoComplete="current-password"
               />
             </Grid>
-            <Grid item xs={12}>
-              <FormControlLabel
-                control={<Checkbox value="allowExtraEmails" color="primary" />}
-                label="I want to receive inspiration, marketing promotions and updates via email."
-              />
-            </Grid>
           </Grid>
           <Button
             type="submit"
             fullWidth
             variant="contained"
-            style={{ backgroundColor: "#5C3D46" }}
+            color="primary"
             className={classes.submit}
           >
             Sign Up
