@@ -21,7 +21,7 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 import { useForm } from "react-hook-form";
-import { USER_DATA } from "../Definitions/EndPoints";
+import { SERVER_PATH, USER_DATA } from "../Definitions/EndPoints";
 import { DefineRequest } from "../Definitions/DefineRequest";
 
 function Copyright() {
@@ -94,8 +94,8 @@ export default function Register() {
 
   async function onSubmit(data) {
     if (data.password == data.re_password) {
-      const response = await fetch(
-        USER_DATA.REGISTER_USER,
+      await fetch(
+        `${SERVER_PATH}${USER_DATA.REGISTER_USER}`,
         DefineRequest("POST", { "Content-Type": "application/json" }, data)
       )
         .then((response) => response.json())

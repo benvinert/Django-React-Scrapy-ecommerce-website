@@ -12,7 +12,11 @@ import Image from "material-ui-image";
 import Container from "@material-ui/core/Container";
 import { useHistory, useParams } from "react-router-dom";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
-import { AUTHORIZATION, ORDERS_URLS } from "../Definitions/EndPoints";
+import {
+  AUTHORIZATION,
+  ORDERS_URLS,
+  SERVER_PATH,
+} from "../Definitions/EndPoints";
 import { DefineRequest } from "../Definitions/DefineRequest";
 
 const useStyles = makeStyles((theme) => ({
@@ -43,7 +47,7 @@ export const SeeOrder = () => {
       Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
     };
     await fetch(
-      `${ORDERS_URLS.GET_ONE_ORDER_BY_ORDER_NUMBER}${orderid}`,
+      `${SERVER_PATH}${ORDERS_URLS.GET_ONE_ORDER_BY_ORDER_NUMBER}${orderid}`,
       DefineRequest("GET", headers)
     )
       .then((resp) => resp.json())

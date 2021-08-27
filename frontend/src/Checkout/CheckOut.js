@@ -11,7 +11,11 @@ import { useHistory } from "react-router";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 import { DefineRequest } from "../Definitions/DefineRequest";
-import { AUTHORIZATION, ORDERS_URLS } from "../Definitions/EndPoints";
+import {
+  AUTHORIZATION,
+  ORDERS_URLS,
+  SERVER_PATH,
+} from "../Definitions/EndPoints";
 
 const CheckOut = () => {
   const { push } = useHistory();
@@ -36,7 +40,7 @@ const CheckOut = () => {
     try {
       let token = localStorage.getItem(ACCESS_JWT_TOKEN);
       await fetch(
-        ORDERS_URLS.ADD_ORDER_TO_HISTORY,
+        `${SERVER_PATH}${ORDERS_URLS.ADD_ORDER_TO_HISTORY}`,
         DefineRequest(
           "POST",
           {

@@ -3,7 +3,11 @@ import Grid from "@material-ui/core/Grid";
 import { UserContext } from "../Context/UserContext";
 import { OrdersTable } from "./OrdersTable";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
-import { AUTHORIZATION, ORDERS_URLS } from "../Definitions/EndPoints";
+import {
+  AUTHORIZATION,
+  ORDERS_URLS,
+  SERVER_PATH,
+} from "../Definitions/EndPoints";
 import { DefineRequest } from "../Definitions/DefineRequest";
 
 export const Orders = () => {
@@ -18,7 +22,7 @@ export const Orders = () => {
       Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
     };
     await fetch(
-      `${ORDERS_URLS.GET_ORDERS_BY_EMAIL}${User.email}`,
+      `${SERVER_PATH}${ORDERS_URLS.GET_ORDERS_BY_EMAIL}${User.email}`,
       DefineRequest("GET", headers)
     )
       .then((resp) => resp.json())

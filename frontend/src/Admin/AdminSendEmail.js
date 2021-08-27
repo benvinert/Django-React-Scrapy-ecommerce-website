@@ -64,7 +64,7 @@ export const AdminSendEmail = () => {
   };
 
   const getUsers = async () => {
-    await fetch(ADMIN_URLS.ADMIN_GET_ALL_USERS, {
+    await fetch(`${SERVER_PATH}${ADMIN_URLS.ADMIN_GET_ALL_USERS}`, {
       headers: {
         Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
       },
