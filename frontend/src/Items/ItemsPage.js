@@ -54,7 +54,7 @@ export default function Shoes() {
     doSpaceGrid: false,
     visibility: false,
   });
-  const matches = useMediaQuery("(max-width:960px)");
+  const isMobile = useMediaQuery("(max-width:960px)");
   const { User } = useContext(UserContext);
   const [showAlert, setShowAlert] = useState({ flag: false, message: "" });
   const inputRef = useRef("");
@@ -265,11 +265,11 @@ export default function Shoes() {
   const Colooors = ["Black", "Yellow", "Green", "Purple", "Blue"];
 
   const checkScreenSize = () => {
-    if (matches) {
+    if (isMobile) {
       if (showFilterMenu.visibility) {
-        return "visible";
+        return { visibility: "visible", display: "block" };
       } else {
-        return "hidden";
+        return { visibility: "hidden", display: "none" };
       }
     }
     return "visible";
@@ -282,7 +282,7 @@ export default function Shoes() {
           <CircularProgress />
         ) : (
           <Grid
-            style={{ visibility: checkScreenSize() }}
+            style={checkScreenSize()}
             className="GridFilters"
             item
             xl={2}
@@ -418,7 +418,7 @@ export default function Shoes() {
               <AlertMessage showAlert={showAlert} />
               Items <br />
               <br />
-              {matches ? (
+              {isMobile ? (
                 <div>
                   Filters
                   <Link>
