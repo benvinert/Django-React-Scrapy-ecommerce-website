@@ -1,4 +1,5 @@
 export const SERVER_PATH = "https://backend-ben-ecommerce.herokuapp.com/";
+export const PREFIX_PATH = "api/All/";
 export const FIRST_PAGE = 1;
 export const USER_DATA = {
   GET_USER_DATA: "auth/users/me/",

@@ -17,6 +17,7 @@ import {
   ITEMS_URLS,
   SERVER_PATH,
   AUTHORIZATION,
+  PREFIX_PATH,
 } from "../Definitions/EndPoints";
 import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
 import { DefineRequest } from "../Definitions/DefineRequest";
@@ -175,7 +176,7 @@ const InItemPage = (props) => {
     };
 
     await fetch(
-      `${ITEMS_URLS.GET_ALL_ITEMS}${whichOperator}`,
+      `${SERVER_PATH}${PREFIX_PATH}${whichOperator}`,
       DefineRequest(method, headers, payload)
     )
       .then((resp) => {
