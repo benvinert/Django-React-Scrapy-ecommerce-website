@@ -33,7 +33,6 @@
 /* Filters  */
 .GridFilters {
   padding: 15px 15px 15px 15px;
-  transition: 0.1s;
   background-color: lightgray;
 }
 
@@ -119,4 +118,13 @@ Grid.Navbar1 Button {
   .RegisterAndLoginBtn {
     left: 10%;
   }
+}
+
+.visible-block {
+  display: block;
+  transition: 850ms;
+}
+.hidden-none {
+  display: none;
+  transition: 850ms;
 }

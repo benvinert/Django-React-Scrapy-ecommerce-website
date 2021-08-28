@@ -226,20 +226,7 @@ function Proside(props) {
               ))}
             </SubMenu>
           ))}
-          <MenuItem
-            icon={<img width="40" height="35" src={LogoVinerfia} alt="logo" />}
-          >
-            About
-          </MenuItem>
-          <MenuItem
-            icon={<img width="40" height="35" src={LogoVinerfia} alt="logo" />}
-          >
-            Contact
-          </MenuItem>
         </Menu>
-        {/* <SidebarFooter>
-                    Footer
-                </SidebarFooter> */}
       </ProSidebar>
     </div>
   );

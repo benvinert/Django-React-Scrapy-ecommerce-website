@@ -267,12 +267,12 @@ export default function Shoes() {
   const checkScreenSize = () => {
     if (isMobile) {
       if (showFilterMenu.visibility) {
-        return { visibility: "visible", display: "block" };
+        return "visible-block";
       } else {
-        return { visibility: "hidden", display: "none" };
+        return "hidden-none";
       }
     }
-    return { visibility: "visible", display: "block" };
+    return "visible-block";
   };
 
   return (
@@ -282,8 +282,7 @@ export default function Shoes() {
           <CircularProgress />
         ) : (
           <Grid
-            style={checkScreenSize()}
-            className="GridFilters"
+            className={`GridFilters ${checkScreenSize()}`}
             item
             xl={2}
             md={2}

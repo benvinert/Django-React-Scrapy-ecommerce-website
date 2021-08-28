@@ -189,7 +189,7 @@ const InItemPage = (props) => {
   return (
     <>
       <Grid container xl={12} md={12} sm={12} xs={12}>
-        <Grid item xl={3} md={3} sm={3} xs={6}>
+        <Grid item xl={3} md={2} sm={3} xs={4}>
           <div className="InfoBuyers">
             <h1>
               {itemDetails.gender} {itemDetails.Category}

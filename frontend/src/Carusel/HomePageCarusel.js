@@ -10,7 +10,7 @@ function HomePageCarusel(props) {
   var items = [
     {
       img: Carusel1,
-      name: "All Clothes of Bigests Company",
+      name: "All Clothes of most big compaies",
       description: "Best Shoes,",
       btntitle: "Women Shoes",
       colorOfButton: "#71ab9c",
