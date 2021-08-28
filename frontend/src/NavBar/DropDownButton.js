@@ -90,7 +90,6 @@ export default function CustomizedMenus() {
   ];
   // Admin DropDown
   var DropDownDetailsAdmin = [
-    { title: "Users", url: "/users", icon: <PeopleIcon /> },
     { title: "Send Email", url: "/email_admin", icon: <EmailIcon /> },
   ];
 

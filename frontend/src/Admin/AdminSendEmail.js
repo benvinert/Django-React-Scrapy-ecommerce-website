@@ -41,7 +41,7 @@ export const AdminSendEmail = () => {
     };
     try {
       await fetch(
-        `${SERVER_PATH}${AUTHORIZATION.ADMIN_SEND_EMAIL}`,
+        `${SERVER_PATH}${ADMIN_URLS.SEND_EMAIL}`,
         DefineRequest("POST", headers, payload)
       )
         .then((resp) => resp.json())
@@ -64,7 +64,7 @@ export const AdminSendEmail = () => {
   };
 
   const getUsers = async () => {
-    await fetch(`${SERVER_PATH}${ADMIN_URLS.ADMIN_GET_ALL_USERS}`, {
+    await fetch(`${SERVER_PATH}${ADMIN_URLS.GET_ALL_USERS}`, {
       headers: {
         Authorization: AUTHORIZATION.JWT_PREFIX_TOKEN + token,
       },
@@ -98,8 +98,9 @@ export const AdminSendEmail = () => {
       ) : (
         <Grid container spacing={2}>
           <Grid item xl={2} md={2} sm={2} xs={2}>
-            <div style={{ fontSize: "1.6rem" }}>
-              here you can write your message to all Users
+            <div style={{ fontSize: "1.6rem", marginLeft: 15 }}>
+              Hey dear {User.name} ,
+              <br /> here you can write your message to all Users
             </div>
           </Grid>
           <Grid item xl={8} md={8} sm={8} xs={8}>

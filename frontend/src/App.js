@@ -95,11 +95,6 @@ function App() {
                     component={SeeOrder}
                   />
                   <ProtectedRoute
-                    path="/users"
-                    exact={true}
-                    component={AdminUsers}
-                  />
-                  <ProtectedRoute
                     path="/email_admin"
                     exact={true}
                     component={AdminSendEmail}
