@@ -72,7 +72,7 @@ function Proside(props) {
       icon: <GiTennisRacket />,
     },
     { title: "Golf", url: "/men/shoes/style=golf", icon: <FaGolfBall /> },
-    { title: "Slides", url: "/men/shoes/style=golf", icon: <GiSonicShoes /> },
+    { title: "Slides", url: "/men/shoes/style=slide", icon: <GiSonicShoes /> },
   ];
 
   var ClothingCategories = [

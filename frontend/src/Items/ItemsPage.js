@@ -138,7 +138,7 @@ export default function Shoes() {
           URL += `${PARAMS_TO_SEARCH.STYLE}${style}/`;
         }
       } else {
-        URL += `${PARAMS_TO_SEARCH.KIDS_GENDER}${kids_gender}/${PARAMS_TO_SEARCH.STYLE}${style}/${PARAMS_TO_SEARCH.CATEGORY}${cat}`;
+        URL += `${PARAMS_TO_SEARCH.KIDS_GENDER}${kids_gender}/${PARAMS_TO_SEARCH.STYLE}${style}/${PARAMS_TO_SEARCH.CATEGORY}${cat}/`;
       }
 
       await fetch(URL)

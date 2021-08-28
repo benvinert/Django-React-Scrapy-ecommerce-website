@@ -4,8 +4,8 @@ export const FRONT_END_SERVER_PATH =
 export const PREFIX_PATH = "api/All/";
 export const FIRST_PAGE = 1;
 export const USER_DATA = {
-  GET_USER_DATA: "auth/users/me/",
-  REGISTER_USER: "auth/users/",
+  GET_USER_DATA: "auth/users/me",
+  REGISTER_USER: "auth/users",
 };
 
 export const ITEMS_URLS = {
@@ -23,14 +23,14 @@ export const PARAMS_TO_SEARCH = {
 
 export const AUTHORIZATION = {
   JWT_PREFIX_TOKEN: "JWT ",
-  CREATE_JWT_TOKEN: "auth/jwt/create/",
-  ACTIVATE_JWT_TOKEN: "auth/users/activation/",
-  JWT_VERIFY: "auth/jwt/verify/",
+  CREATE_JWT_TOKEN: "auth/jwt/create",
+  ACTIVATE_JWT_TOKEN: "auth/users/activation",
+  JWT_VERIFY: "auth/jwt/verify",
 };
 
 export const ADMIN_URLS = {
-  SEND_EMAIL: "api/Admin/sendEmail/",
-  GET_ALL_USERS: "api/Admin/getAllUsers/",
+  SEND_EMAIL: "api/Admin/sendEmail",
+  GET_ALL_USERS: "api/Admin/getAllUsers",
 };
 
 export const ORDERS_URLS = {
