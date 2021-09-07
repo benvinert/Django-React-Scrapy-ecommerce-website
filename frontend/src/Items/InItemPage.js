@@ -19,7 +19,7 @@ import {
   AUTHORIZATION,
   PREFIX_PATH,
 } from "../Definitions/EndPoints";
-import { ACCESS_JWT_TOKEN } from "../Definitions/Keys";
+import { ACCESS_JWT_TOKEN, CART_KEY } from "../Definitions/Keys";
 import { DefineRequest } from "../Definitions/DefineRequest";
 
 const InItemPage = (props) => {
@@ -72,12 +72,12 @@ const InItemPage = (props) => {
   }, [userPostLoading]);
 
   const deleteFromCart = (Product_idex_to_Remove) => {
-    let cartAfterFilter = JSON.parse(localStorage.getItem("cart")).filter(
+    let cartAfterFilter = JSON.parse(localStorage.getItem(CART_KEY)).filter(
       (eachItemCart, index) => {
         return index != Product_idex_to_Remove;
       }
     );
-    localStorage.setItem("cart", JSON.stringify(cartAfterFilter));
+    localStorage.setItem(CART_KEY, JSON.stringify(cartAfterFilter));
     setCart(cartAfterFilter);
     push("/cart");
   };
@@ -114,16 +114,16 @@ const InItemPage = (props) => {
   };
 
   const SaveChangeOnCart = (Product_idex) => {
-    let cart = JSON.parse(localStorage.getItem("cart"));
+    let cart = JSON.parse(localStorage.getItem(CART_KEY));
     let cartAfterFilter = cart.map((eachItem, index) => {
       if (index == Product_idex) {
         eachItem.selectedSize = [size];
       }
       return eachItem;
     });
-    localStorage.setItem("cart", JSON.stringify(cartAfterFilter));
+    localStorage.setItem(CART_KEY, JSON.stringify(cartAfterFilter));
     setCart(cartAfterFilter);
-    setCheckFromWhere("cart");
+    setCheckFromWhere(CART_KEY);
   };
 
   ///Alert Add Item To Cart
@@ -141,7 +141,7 @@ const InItemPage = (props) => {
   };
 
   const CheckIfNeedToDisabled = ({ eachS }) => {
-    if (checkFromWhere == "cart") {
+    if (checkFromWhere == CART_KEY) {
       return (
         <FormControlLabel
           disabled
@@ -215,7 +215,7 @@ const InItemPage = (props) => {
                         Save
                       </Button>
                     ) : null}
-                    {checkFromWhere == "cart" ? (
+                    {checkFromWhere == CART_KEY ? (
                       <Button
                         variant="outlined"
                         color="primary"

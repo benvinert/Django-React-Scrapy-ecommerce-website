@@ -9,6 +9,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import AlertMessage from "./AlertMessage";
 import { useHistory } from "react-router";
 import { CartContext } from "../Context/CartContext";
+import { CART_KEY } from "../Definitions/Keys";
 
 export default function Cart() {
   const { cart } = useContext(CartContext);
@@ -22,7 +23,7 @@ export default function Cart() {
   });
   const [showAlert, setShowAlert] = useState({ flag: false, message: "" });
   const getCartItems = () => {
-    setCartItems(JSON.parse(localStorage.getItem("cart")));
+    setCartItems(JSON.parse(localStorage.getItem(CART_KEY)));
     setLoading(false);
   };
 
@@ -124,7 +125,7 @@ export default function Cart() {
           ) : (
             <Item
               setcartitems={setCartItems}
-              fromWhere={"cart"}
+              fromWhere={CART_KEY}
               items={cartItems}
               loading={Loading}
               setshowalert={setShowAlert}

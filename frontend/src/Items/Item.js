@@ -12,6 +12,7 @@ import { LikeItemsContext } from "../Context/LikeItemsContext";
 import "semantic-ui-css/semantic.min.css";
 import FavoriteBorderIcon from "@material-ui/icons/FavoriteBorder";
 import { UserContext } from "../Context/UserContext";
+import { CART_KEY, LIKE_LIST_KEY } from "../Definitions/Keys";
 
 const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
   const { User } = useContext(UserContext);
@@ -39,10 +40,10 @@ const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
       return index != Product_idex_to_Remove;
     });
     localStorage.setItem(fromWhereParam, JSON.stringify(cartAfterFilter));
-    if (fromWhereParam == "cart") {
+    if (fromWhereParam == CART_KEY) {
       setCart(cartAfterFilter);
       setcartitems(cartAfterFilter);
-    } else if (fromWhereParam == "likelist") {
+    } else if (fromWhereParam == LIKE_LIST_KEY) {
       setLikeItems(cartAfterFilter);
     }
 
@@ -63,7 +64,7 @@ const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
   };
 
   const CheckFromWhereComponent = ({ fromWhere, index }) => {
-    if (fromWhere == "cart" || fromWhere == "likelist") {
+    if (fromWhere == CART_KEY || fromWhere == LIKE_LIST_KEY) {
       return (
         <Link onClick={() => deleteFromList(index, fromWhere)}>
           <HighlightOffIcon
@@ -87,7 +88,7 @@ const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
         likeEntered = { entered: true, index: index };
       }
     });
-    if (fromWhere == "likelist") {
+    if (fromWhere == LIKE_LIST_KEY) {
       return null;
     } else {
       return (
@@ -101,7 +102,7 @@ const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
                     style={{ transition: "0.3s" }}
                     className="buttonLike"
                     onClick={() =>
-                      deleteFromList(likeEntered.index, "likelist")
+                      deleteFromList(likeEntered.index, LIKE_LIST_KEY)
                     }
                   />
                 ) : (
@@ -114,7 +115,7 @@ const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
                 )}
               </Link>
             </Grid>
-            {fromWhere == "cart" ? (
+            {fromWhere == CART_KEY ? (
               <Grid item xl={5} md={5} sm={5} xs={5}>
                 <span>Size:{each.selectedSize}</span>
               </Grid>

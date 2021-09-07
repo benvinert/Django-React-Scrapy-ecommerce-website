@@ -28,11 +28,12 @@ import { SeeOrder } from "./Orders/SeeOrder";
 import { ScrollToTop } from "./Components/ScrollToTop";
 import { AdminUsers } from "./Admin/AdminUsers";
 import { AdminSendEmail } from "./Admin/AdminSendEmail";
-
+import { CART_KEY, LIKE_LIST_KEY } from "./Definitions/Keys";
 function App() {
-  const cartFromLocalStorage = JSON.parse(localStorage.getItem("cart")) || [];
+  const cartFromLocalStorage =
+    JSON.parse(localStorage.getItem(CART_LIST)) || [];
   const LikeItemsFromLocalStorage =
-    JSON.parse(localStorage.getItem("likelist")) || [];
+    JSON.parse(localStorage.getItem(LIKE_LIST_KEY)) || [];
 
   const [User, setUser] = useState({
     name: "Null",
@@ -44,8 +45,8 @@ function App() {
   const [cart, setCart] = useState(cartFromLocalStorage);
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
-    localStorage.setItem("likelist", JSON.stringify(likeItems));
+    localStorage.setItem(CART_KEY, JSON.stringify(cart));
+    localStorage.setItem(LIKE_LIST_KEY, JSON.stringify(likeItems));
   }, [cart, likeItems]);
 
   const ProtectedRoute = ({ component: Component, ...rest }) => {

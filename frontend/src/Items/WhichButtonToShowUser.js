@@ -3,6 +3,7 @@ import { Link as ReactScroll } from "react-scroll";
 import Button from "@material-ui/core/Button";
 import CircularProgress from "@material-ui/core/CircularProgress";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { CART_KEY } from "../Definitions/Keys";
 
 export const WhichButtonToShowUser = ({
   checkFromWhere,
@@ -14,7 +15,7 @@ export const WhichButtonToShowUser = ({
 }) => {
   const isMobile = useMediaQuery("(max-width:600px)");
   console.log("WhichButtonToShow :::", itemDetails);
-  if (checkFromWhere == "cart") {
+  if (checkFromWhere == CART_KEY) {
     return (
       <Button
         variant="outlined"
