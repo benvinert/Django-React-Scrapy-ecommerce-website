@@ -6,6 +6,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import Button from "@material-ui/core/Button";
 import AlertMessage from "./AlertMessage";
 import useMediaQuery from "@material-ui/core/useMediaQuery";
+import { LIKE_LIST_KEY } from "../Definitions/Keys";
 
 const LikeItems = () => {
   const { likeItems, setLikeItems } = useContext(LikeItemsContext);
@@ -59,7 +60,7 @@ const LikeItems = () => {
             <h1>Loading....</h1>
           ) : (
             <Item
-              fromWhere={"likelist"}
+              fromWhere={LIKE_LIST_KEY}
               items={likeItems}
               loading={Loading}
               setshowalert={setShowAlert}
