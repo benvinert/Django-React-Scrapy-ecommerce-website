@@ -9,7 +9,7 @@ import Snackbar from "@material-ui/core/Snackbar";
 import AlertMessage from "./AlertMessage";
 import { useHistory } from "react-router";
 import { CartContext } from "../Context/CartContext";
-import { CART_KEY } from "../Definitions/Keys";
+import { CART_KEY, PRICE_FOR_FREE_SHIPPING } from "../Definitions/Keys";
 
 export default function Cart() {
   const { cart } = useContext(CartContext);
@@ -33,7 +33,7 @@ export default function Cart() {
     cartItems.map((each) => {
       totalPay += each.price;
     });
-    if (totalPay < 500) {
+    if (totalPay < PRICE_FOR_FREE_SHIPPING) {
       shipingPrice = 2;
     }
 
@@ -83,8 +83,10 @@ export default function Cart() {
                   You need add:
                   <br />
                   <span style={{ color: "white" }}>
-                    {(500 - totalSummary.totalPay).toFixed(2)} $ to Get free
-                    Shiping
+                    {(PRICE_FOR_FREE_SHIPPING - totalSummary.totalPay).toFixed(
+                      2
+                    )}{" "}
+                    $ to Get free Shiping
                   </span>
                 </h5>
               )}

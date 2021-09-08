@@ -16,10 +16,9 @@ import { CART_KEY, LIKE_LIST_KEY } from "../Definitions/Keys";
 
 const Item = ({ fromWhere, items, loading, setcartitems, setshowalert }) => {
   const { User } = useContext(UserContext);
-  const { push, location } = useHistory();
   const { cart, setCart } = useContext(CartContext);
   const { likeItems, setLikeItems } = useContext(LikeItemsContext);
-  const [checked, setChecked] = useState(true);
+
   if (loading) {
     return <h2>Loading...</h2>;
   }

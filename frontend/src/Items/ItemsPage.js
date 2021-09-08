@@ -29,7 +29,7 @@ import {
   SERVER_PATH,
 } from "../Definitions/EndPoints";
 
-export default function Shoes() {
+export default function ItemsPage() {
   const { push, location } = useHistory();
   const [locState, setLocState] = useState(null);
   const [Allitems, setAllitems] = useState({

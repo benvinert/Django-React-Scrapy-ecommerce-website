@@ -22,7 +22,7 @@ import {
 import { ACCESS_JWT_TOKEN, CART_KEY } from "../Definitions/Keys";
 import { DefineRequest } from "../Definitions/DefineRequest";
 
-const InItemPage = (props) => {
+const InItemPage = () => {
   const location = useLocation();
   const matches = useMediaQuery("(max-width:600px)");
   const { User } = useContext(UserContext);
